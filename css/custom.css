@@ -1,5 +1,5 @@
 .veridian{
-background-color: #00796B !important;
+background-color: #0D8C91 !important;
 color: #fff !important;
 }
 .custom-container{
@@ -50,14 +50,14 @@ text-shadow: none !important;
 }
 .back-to-top {
 background-color: #EEEEEE !important;
-color: #00796B !important;
+color: #0D8C91 !important;
 font-weight: bold !important;
 }
 .indent{
     margin-left: 15px;
 }
 .veridian-section {
-background-color: #00796B !important;
+background-color: #0D8C91 !important;
 }
 .full-height{
     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */

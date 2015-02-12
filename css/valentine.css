@@ -1,0 +1,77 @@
+.veridian{
+background-color: #0D8C91 !important;
+color: #fff !important;
+}
+.del-red{
+background-color: #b71c1c !important;
+color: #fff !important;
+}
+.del-red>li>a{
+background-color: #b71c1c !important;
+color: #fff !important;
+}
+.custom-container{
+ padding-right: 0px !important;
+ padding-left: 0px !important;  
+}
+.custom-body{
+   background-color:  #EEEEEE !important;
+}
+.veridian>li>a{
+    background-color: #0D8C91 !important;
+color: #fff !important;
+}
+.btn-contact{
+    margin-top: 8px;
+background-color: #FCEC4A;
+color: #8E8E8E;
+border-color: #357ebd;
+margin-left: 15px;
+}
+.btn-contact:hover {
+margin-top: 8px;
+background-color: #FAF08D;
+color: #6F6F6F;
+border-color: #357ebd;
+margin-left: 15px;
+}
+.btn-contact:active {
+margin-top: 8px;
+background-color: #FAF08D;
+color: #6F6F6F;
+border-color: #357ebd;
+margin-left: 15px;
+}
+.btn-contact:focus {
+margin-top: 8px;
+background-color: #FAF08D;
+color: #6F6F6F;
+border-color: #357ebd;
+margin-left: 15px;
+}
+.custom-header{
+    border-bottom: 1px solid #080808;
+}
+.page-section h2 {
+    color:#757575 !important;
+    text-shadow: none !important;
+}
+.back-to-top{
+background-color: #EEEEEE !important;
+color: #b71c1c !important;
+font-weight: bold !important;
+}
+.indent{
+    margin-left: 15px;
+}
+.yellow {
+background-color: #FCEC4A !important;
+}
+.full-height{
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+}
+a {
+color: #FF1744 !important;
+}

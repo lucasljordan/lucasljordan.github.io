@@ -38,11 +38,10 @@
       <file leaf-file-name="valentine.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/valentine.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27827382" vertical-offset="0" max-vertical-offset="4250">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.2157738" vertical-offset="2915" max-vertical-offset="4233">
+              <caret line="180" column="337" selection-start-line="180" selection-start-column="337" selection-end-line="180" selection-end-column="337" />
               <folding>
                 <element signature="n#style#0;n#small#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,7 +166,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -238,11 +237,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/valentine.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27827382" vertical-offset="0" max-vertical-offset="4250">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.2157738" vertical-offset="2915" max-vertical-offset="4233">
+          <caret line="180" column="337" selection-start-line="180" selection-start-column="337" selection-end-line="180" selection-end-column="337" />
           <folding>
             <element signature="n#style#0;n#small#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

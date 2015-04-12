@@ -12,12 +12,6 @@
     <title></title>
 </head>
 <body class="grey lighten-3">
-<script type="text/javascript">
-    $(document).keyup(function(e) {
-
-        if (e.keyCode == 27) { alert("You pushed esc!"); }   // escape key maps to keycode `27`
-    });
-</script>
 <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper cyan">
@@ -115,7 +109,10 @@
     $(document).ready(function(){
         $('.scrollspy').scrollSpy();
     });
+    $(document).keyup(function(e) {
 
+        if (e.keyCode == 27) { alert("You pushed esc!"); }   // escape key maps to keycode `27`
+    });
 </script>
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

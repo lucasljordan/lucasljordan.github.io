@@ -182,6 +182,7 @@
 
         //Mobile functionality
         $('body').bind('swipe', function(e){
+            e.stopPropagation();
             e.preventDefault();
         });
 

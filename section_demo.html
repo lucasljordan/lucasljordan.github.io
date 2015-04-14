@@ -159,6 +159,7 @@
             $('#main-nav').toggleClass("open");
         });
 
+        //disable mouse scroll and do custom behaviour
         $('body').bind('mousewheel', function(e){
             e.preventDefault();
             if(e.originalEvent.wheelDelta /120 > 0) {
@@ -177,6 +178,11 @@
                     scrollToID('#' + sectionID, 0);
                 }
             }
+        });
+
+        //Mobile functionality
+        $('body').bind('swipe', function(e){
+            e.preventDefault();
         });
 
     });

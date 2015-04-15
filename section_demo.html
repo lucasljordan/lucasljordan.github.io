@@ -124,7 +124,7 @@
             e.stopPropagation();
             e.preventDefault();
         });*/
-        $('body').on({ 'scrollstart' : function(e){ /* do something... */  e.stopPropagation(); e.preventDefault(); } });
+        $('body').on({ 'touchmove' : function(e){ /* do something... */  e.stopPropagation(); e.preventDefault(); } });
     });
     // scroll function
     function scrollToID(id, speed){

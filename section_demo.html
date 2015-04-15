@@ -13,66 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/section.css" />
-    <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Helvetica Neue', arial, sans-serif;
-        }
-        .header {
-            position: fixed;
-            width: 100%;
-            background: #222;
-            z-index: 10;
-        }
-        .header .navbar-brand {
-            font-weight: 900;
-        }
-        .header .navbar {
-            margin: 0;
-            border: none;
-        }
-        .page-section {
-            min-width: 100vw;
-            min-height: 100vh;
-        }
-        .back-to-top {
-            display: inline-block;
-            clear: both;
-            background: #fff;
-            color: #333;
-            padding: 0 10px 5px;
-            margin: 20px 0 0;
-            text-shadow: none;
-        }
-        .back-to-top:hover {
-            background: #333;
-            color: #fff;
-            text-decoration: none;
-        }
-        hr {border-color: #ddd;}
-
-        @media (min-width: 768px) {
-            .header .navbar-brand {
-                padding-left: 0;
-            }
-            .navbar-nav {
-                float: right;
-            }
-        }
-        @media (max-width: 480px) {
-            .page-section h1 {
-                font-size: 3em;
-            }
-            .page-section h2 {
-                font-size: 2em;
-            }
-            .page-section p {
-                font-size: 1em;
-                margin: 0 0 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/base.css" />
 </head>
 
 <body>
@@ -146,7 +87,7 @@
             event.preventDefault();
             var sectionID = $(this).attr("data-id");
             /*scrollToID('#' + sectionID, 750);*/
-            scrollToID('#' + sectionID, 0);
+            scrollToID('#' + sectionID, 300);
         });
         // scroll to top action
         $('.scroll-top').on('click', function(event) {
@@ -167,7 +108,7 @@
                 var lastChar = parseInt(e.target.id.substr(e.target.id.length - 1));
                 if((lastChar - 1) > 0) {
                     var sectionID = "Section-" + (lastChar - 1);
-                    scrollToID('#' + sectionID, 0);
+                    scrollToID('#' + sectionID, 300);
                 }
             }
             else{
@@ -175,13 +116,13 @@
                 var lastChar = parseInt(e.target.id.substr(e.target.id.length - 1));
                 if((lastChar + 1) <= $(".page-section").length) {
                     var sectionID = "Section-" + (lastChar + 1);
-                    scrollToID('#' + sectionID, 0);
+                    scrollToID('#' + sectionID, 300);
                 }
             }
         });
 
         //Mobile functionality
-        $('body').bind('swipe', function(e){
+        $('body').on('swipe', function(e){
             e.stopPropagation();
             e.preventDefault();
         });

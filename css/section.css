@@ -62,10 +62,7 @@ margin-left: 15px;
     color:#757575 !important;
     text-shadow: none !important;
 }
-.page-section h4 {
-    color:#757575 !important;
-    text-shadow: none !important;
-}
+
 .back-to-top{
 background-color: #EEEEEE !important;
 color: #b71c1c !important;
@@ -85,6 +82,7 @@ color: #FF1744 !important;
 .page-container { padding-top: 70px;}
 .first { padding-top: 120px;}
 .page-container h2{ color: #fff !important; }
+.page-container h4{ color: #fff !important; }
 .green{ background-color: #a5d6a7 !important; }
 .teal{ background-color: #80cbc4 !important; }
 .cyan1 { background-color: #80deea  !important; }

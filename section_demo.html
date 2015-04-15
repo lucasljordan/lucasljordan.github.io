@@ -126,16 +126,9 @@
             e.stopPropagation();
             e.preventDefault();
         });*/
-        document.addEventListener('touchstart', $('body').touchstart);
-        document.addEventListener('touchmove', $('body').touchmove);
-
-        function touchstart(e) {
-            e.preventDefault()
-        }
-
-        function touchmove(e) {
-            e.preventDefault()
-        }
+        $('body').bind('touchmove', function(e){
+            e.preventDefault();
+        });
 
 
     });

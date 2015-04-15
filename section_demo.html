@@ -122,10 +122,11 @@
         });
 
         //Mobile functionality
-        $('body').on('swipe', function(e){
+        /*$('body').on('swipe', function(e){
             e.stopPropagation();
             e.preventDefault();
-        });
+        });*/
+        document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
 
     });
     // scroll function

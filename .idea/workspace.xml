@@ -40,8 +40,8 @@
       <file leaf-file-name="section_demo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/section_demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.036364" vertical-offset="459" max-vertical-offset="3213">
-              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+            <state vertical-scroll-proportion="-6.8" vertical-offset="459" max-vertical-offset="3213">
+              <caret line="49" column="40" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -60,8 +60,8 @@
       <file leaf-file-name="section.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/section.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35675675" vertical-offset="824" max-vertical-offset="1632">
-              <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.8087201" vertical-offset="853" max-vertical-offset="1598">
+              <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -214,7 +214,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -440,16 +440,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/section_demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.036364" vertical-offset="459" max-vertical-offset="3213">
-          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        <state vertical-scroll-proportion="-6.8" vertical-offset="459" max-vertical-offset="3213">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/section.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35675675" vertical-offset="824" max-vertical-offset="1632">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.8087201" vertical-offset="853" max-vertical-offset="1598">
+          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
           <folding />
         </state>
       </provider>

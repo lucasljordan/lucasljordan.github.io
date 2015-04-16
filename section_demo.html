@@ -81,7 +81,7 @@
 <!--/#page-section-->
 
 <div id="Section-5" class="page-section green">
-    <div class="container page-container first">
+    <div class="container page-container">
         <h2>SECTION 5</h2>
         <hr>
     </div>
@@ -101,6 +101,9 @@
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function() {
+
+        $("body").css("overflow", "hidden");
+        $("body").css("overflow", "auto");
         // navigation click actions
         $('.scroll-link').on('click', function(event){
             event.preventDefault();

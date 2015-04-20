@@ -154,9 +154,9 @@
         var currentY = e.originalEvent.touches ?
                 e.originalEvent.touches[0].pageY : e.pageY;
         if (currentY > lastY) {
-            //$display.html('moving down');
+            $display.html('moving down');
         } else {
-           // $display.html('moving up');
+            $display.html('moving up');
         }
         lastY = currentY;
     });

@@ -125,7 +125,6 @@
         });
 
         //disable mouse scroll and do custom behaviour
-        /*$('body').bind('mousewheel', function(e){*/
         $(document).bind('mousewheel', function(e){
             e.preventDefault();
             if(e.originalEvent.wheelDelta /120 > 0) {
@@ -150,14 +149,24 @@
         event.preventDefault();
     });*/
     var lastY,
-            $display = $('#display');
+            //$display = $('#display');
     $(document).bind('touchmove', function (e) {
         var currentY = e.originalEvent.touches ?
                 e.originalEvent.touches[0].pageY : e.pageY;
         if (currentY > lastY) {
-            $display.html('moving down');
+            //$display.html('moving down');
+            var lastChar = parseInt(e.target.id.substr(e.target.id.length - 1));
+            if((lastChar - 1) > 0) {
+                var sectionID = "Section-" + (lastChar + 1);
+                scrollToID('#' + sectionID, 300);
+            }
         } else {
-            $display.html('moving up');
+           // $display.html('moving up');
+            var lastChar = parseInt(e.target.id.substr(e.target.id.length - 1));
+            if((lastChar - 1) > 0) {
+                var sectionID = "Section-" + (lastChar - 1);
+                scrollToID('#' + sectionID, 300);
+            }
         }
         lastY = currentY;
     });

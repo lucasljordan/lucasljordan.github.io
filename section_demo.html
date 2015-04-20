@@ -150,7 +150,7 @@
     });*/
     var lastY,
             $display = $('#display');
-    $(document).bind('touchmove mousemove', function (e) {
+    $(document).bind('touchmove', function (e) {
         var currentY = e.originalEvent.touches ?
                 e.originalEvent.touches[0].pageY : e.pageY;
         if (currentY > lastY) {

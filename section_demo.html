@@ -52,6 +52,7 @@
         <hr>
         <div class="divide80"></div>
         <h2 class="text-center"> Scroll Down ↓ </h2>
+        <h2 id="display" class="text-center"> Help text </h2>
     </div>
 </div>
 <!--/#page-section-->
@@ -143,19 +144,22 @@
                 }
             }
         });
-        //$('body').on({ 'touchstart' : function(){ /* do something... */ } });
-        //Mobile functionality
-        /*$('body').on('swipe', function(e){
-            e.stopPropagation();
-            e.preventDefault();
-        });*/
-
-
     });
-    $(document).bind("touchmove",function(event){
+    /*$(document).bind("touchmove",function(event){
         event.preventDefault();
+    });*/
+    var lastY,
+            $display = $('#display');
+    $(document).bind('touchmove mousemove', function (e) {
+        var currentY = e.originalEvent.touches ?
+                e.originalEvent.touches[0].pageY : e.pageY;
+        if (currentY > lastY) {
+            $display.html('moving down');
+        } else {
+            $display.html('moving up');
+        }
+        lastY = currentY;
     });
-
 
     // scroll function
     function scrollToID(id, speed){

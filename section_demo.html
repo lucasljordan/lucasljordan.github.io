@@ -52,7 +52,6 @@
         <hr>
         <div class="divide80"></div>
         <h2 class="text-center"> Scroll Down ↓ </h2>
-        <h2 id="display" class="text-center"> Help text </h2>
     </div>
 </div>
 <!--/#page-section-->
@@ -145,9 +144,8 @@
             }
         });
     });
-    /*$(document).bind("touchmove",function(event){
-        event.preventDefault();
-    });*/
+
+    // custom mobile scroll function
     var lastY,
             $display = $('#display');
     $(document).bind('touchmove', function (e) {

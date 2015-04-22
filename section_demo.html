@@ -153,12 +153,16 @@
     $(document).bind('touchmove', function (e) {
         var currentY = e.originalEvent.touches ?
                 e.originalEvent.touches[0].pageY : e.pageY;
+        var test = $(e.originalEvent.targetTouches[0].target).attr('id');
+        var lastChar = test.substr(test.length - 1);
         if (currentY > lastY) {
             //moving down
-            $display.html('moving down');
+            var sectionID = "Section-" + (lastChar + 1);
+            scrollToID('#' + sectionID, 300);
         } else {
             //moving up
-            $display.html('moving up');
+            var sectionID = "Section-" + (lastChar - 1);
+            scrollToID('#' + sectionID, 300);
         }
         lastY = currentY;
     });

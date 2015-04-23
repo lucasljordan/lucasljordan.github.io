@@ -155,12 +155,14 @@
         var lastChar = parseInt(test.substr(test.length - 1));
         if (currentY > lastY) {
             //moving down
+            e.preventDefault();
             if((lastChar + 1) <= $(".page-section").length) {
                 var sectionID = "Section-" + (lastChar + 1);
                 scrollToID('#' + sectionID, 300);
             }
         } else {
             //moving up
+            e.preventDefault();
             if((lastChar - 1) > 0) {
             var sectionID = "Section-" + (lastChar - 1);
             scrollToID('#' + sectionID, 300);

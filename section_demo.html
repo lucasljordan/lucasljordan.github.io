@@ -47,7 +47,7 @@
 <!--/.header-->
 
 <div id="Section-1" class="page-section green">
-    <div class="container page-container first" id="Section-1">
+    <div class="container page-container first">
         <h2>SECTION 1</h2>
         <hr>
         <div class="divide80"></div>
@@ -170,21 +170,31 @@
     });*/
     /*http://stackoverflow.com/questions/13278087/determine-vertical-direction-of-a-touchmove*/
     var ts;
+    var lastChar;
     $(document).bind('touchstart', function (e){
         ts = e.originalEvent.touches[0].clientY;
         //get section id number here to some var
         var test = $(e.originalEvent.targetTouches[0].target).attr('id');
-        console.log("Touched ID: "+ test);
+        lastChar = parseInt(test.substr(test.length - 1));
+        //console.log("Touched ID: "+ test);
     });
 
     $(document).bind('touchend', function (e){
         var te = e.originalEvent.changedTouches[0].clientY;
         if(ts > te+5){
             // slide down
-            console.log("Moving down");
+            //console.log("Moving down");
+            if((lastChar + 1) <= $(".page-section").length) {
+                var sectionID = "Section-" + (lastChar + 1);
+                scrollToID('#' + sectionID, 300);
+            }
         }else if(ts < te-5){
             // slide up
-            console.log("Moving Up");
+           // console.log("Moving Up");
+            if((lastChar - 1) > 0) {
+                var sectionID = "Section-" + (lastChar - 1);
+                scrollToID('#' + sectionID, 300);
+            }
         }
     });
 

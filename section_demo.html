@@ -104,7 +104,6 @@
     $(document).ready(function() {
 
         $("body").css("overflow", "hidden");
-        //$("body").css("overflow", "auto");
         // navigation click actions
         $('.scroll-link').on('click', function(event){
             event.preventDefault();
@@ -144,31 +143,8 @@
             }
         });
     });
-
-    // custom mobile scroll function
-    /*var lastY,
-            $display = $('#display');
-    $(document).on('touchmove', function (e) {
-        var currentY = e.originalEvent.touches ?
-                e.originalEvent.touches[0].pageY : e.pageY;
-        var test = $(e.originalEvent.targetTouches[0].target).attr('id');
-        var lastChar = parseInt(test.substr(test.length - 1));
-        if (currentY > lastY) {
-            //moving down
-            if((lastChar + 1) <= $(".page-section").length) {
-                var sectionID = "Section-" + (lastChar + 1);
-                scrollToID('#' + sectionID, 300);
-            }
-        } else {
-            //moving up
-            if((lastChar - 1) > 0) {
-            var sectionID = "Section-" + (lastChar - 1);
-            scrollToID('#' + sectionID, 300);
-            }
-        }
-        lastY = currentY;
-    });*/
-    /*http://stackoverflow.com/questions/13278087/determine-vertical-direction-of-a-touchmove*/
+    /* Phone scroll function */
+    /* http://stackoverflow.com/questions/13278087/determine-vertical-direction-of-a-touchmove */
     var ts;
     var lastChar;
     $(document).bind('touchstart', function (e){
@@ -176,21 +152,18 @@
         //get section id number here to some var
         var test = $(e.originalEvent.targetTouches[0].target).attr('id');
         lastChar = parseInt(test.substr(test.length - 1));
-        //console.log("Touched ID: "+ test);
     });
 
     $(document).bind('touchend', function (e){
         var te = e.originalEvent.changedTouches[0].clientY;
         if(ts > te+5){
             // slide down
-            //console.log("Moving down");
             if((lastChar + 1) <= $(".page-section").length) {
                 var sectionID = "Section-" + (lastChar + 1);
                 scrollToID('#' + sectionID, 300);
             }
         }else if(ts < te-5){
             // slide up
-           // console.log("Moving Up");
             if((lastChar - 1) > 0) {
                 var sectionID = "Section-" + (lastChar - 1);
                 scrollToID('#' + sectionID, 300);

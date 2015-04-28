@@ -146,7 +146,7 @@
     });
 
     // custom mobile scroll function
-    var lastY,
+    /*var lastY,
             $display = $('#display');
     $(document).on('touchmove', function (e) {
         var currentY = e.originalEvent.touches ?
@@ -167,6 +167,22 @@
             }
         }
         lastY = currentY;
+    });*/
+    var ts;
+    $(document).bind('touchstart', function (e){
+        ts = e.originalEvent.touches[0].clientY;
+        //get section id number here to some var
+    });
+
+    $(document).bind('touchend', function (e){
+        var te = e.originalEvent.changedTouches[0].clientY;
+        if(ts > te+5){
+            // slide down
+            console.log("Moving down");
+        }else if(ts < te-5){
+            // slide up
+            console.log("Moving Up");
+        }
     });
 
     // scroll function

@@ -124,7 +124,7 @@
 
         //disable mouse scroll and do custom behaviour
         //$('body').bind('mousewheel', function(e){
-        $(document).bind('mousewheel', function(e){
+        $("*").bind('mousewheel', function(e){
             e.preventDefault();
             if(e.originalEvent.wheelDelta /120 > 0) {
                 // scrolling up

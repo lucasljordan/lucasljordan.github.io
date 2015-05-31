@@ -30,6 +30,10 @@ nav h1{
     right: 0;
     top: 10px;
 }
+#menu-top-nav li {
+    float: left;
+    position: relative;
+}
 .page-section {
     min-height: 100vh;
     margin:0;

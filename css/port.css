@@ -12,13 +12,23 @@
     min-width: 100vw;
 }
 header{
+     background-color: #314555;
+ }
+nav{
     background-color: #314555;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
 }
-header h1{
+nav h1{
     color: #00c4b2;
 }
-header h3{
+#menu-top-nav {
     color: #fff;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 10px;
 }
 .page-section {
     min-height: 100vh;
@@ -28,7 +38,7 @@ header h3{
     background-color: #314555;
 }
 .container {
-    width: 60%;
+    width: 95%;
     margin: 0 auto;
     padding-top: 60px;
 }

@@ -16,6 +16,7 @@
     margin:0;
     padding:0;
     border:0;
+    background-color: #0C121A;;
 }
 .container {
     width: 60%;
@@ -37,8 +38,6 @@
     width: 100%;
     height: 80px;
 }
-.green{ background-color: #0B2F3A;}
-.blue {background-color: #0B243B;}
 .dark {
     background: -webkit-linear-gradient(#424242, #2E2E2E); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#424242, #2E2E2E); /* For Opera 11.1 to 12.0 */

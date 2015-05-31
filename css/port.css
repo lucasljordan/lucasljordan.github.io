@@ -96,6 +96,7 @@ nav h1{
 .inner {
     width: 60%;
     margin: 0 auto;
-    vertical-align: middle
+    vertical-align: middle;
+    text-align: center;
 }
 

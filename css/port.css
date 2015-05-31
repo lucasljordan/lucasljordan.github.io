@@ -34,6 +34,10 @@ nav h1{
     float: left;
     position: relative;
 }
+#menu-top-nav li a {
+    color: #FFF;
+    padding: 0 4px;
+}
 .page-section {
     min-height: 100vh;
     margin:0;

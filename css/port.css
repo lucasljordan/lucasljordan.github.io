@@ -13,10 +13,12 @@
 }
 header{
     background-color: #314555;
-    border-bottom: 1px solid #C0C0C0;
 }
-header h1, h3{
+header h1{
     color: #00c4b2;
+}
+header h3{
+    color: #fff;
 }
 .page-section {
     min-height: 100vh;

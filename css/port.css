@@ -98,7 +98,10 @@ nav h1{
     margin: 0 auto;
     vertical-align: middle;
     text-align: center;
-    color: #00c4b2;
-    font-size: inherit;
 }
+.inner h1{
+    color: #00c4b2;
+    font-size: -webkit-xxx-large;
+}
+
 

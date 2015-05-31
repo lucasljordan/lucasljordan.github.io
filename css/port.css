@@ -23,7 +23,7 @@ nav{
 nav h1{
     color: #00c4b2;
 }
-@media (min-width: 700px) and (orientation: landscape) {
+@media screen and (min-width: 640px) {
     #menu-top-nav {
         color: #fff;
         font-size: 14px;
@@ -42,7 +42,7 @@ nav h1{
         padding: 0 4px;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     #menu-top-nav {
         display: none;
     }

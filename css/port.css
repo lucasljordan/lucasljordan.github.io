@@ -98,5 +98,7 @@ nav h1{
     margin: 0 auto;
     vertical-align: middle;
     text-align: center;
+    color: #00c4b2;
+    font-size: inherit;
 }
 

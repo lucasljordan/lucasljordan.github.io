@@ -52,6 +52,19 @@ nav h1{
         font-size: 38px;
     }
 }
+@media screen and (min-width: 360px) and (max-width: 360px){
+    .inner h1{
+        color: #00c4b2;
+        font-size: 47px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .inner h1{
+        color: #00c4b2;
+        font-size: 28px;
+    }
+}
+
 #menu-top-nav li {
         float: left;
         position: relative;

@@ -26,7 +26,6 @@ nav h1{
     top: 10px;
 }
 
-/*@media screen and (min-width: 640px) {*/
 @media screen and (min-width: 360px) {
     #menu-top-nav {
         color: #fff;
@@ -34,6 +33,23 @@ nav h1{
         position: absolute;
         right: 0;
         top: 10px;
+    }
+    .inner h1{
+        color: #00c4b2;
+        font-size: -webkit-xxx-large;
+    }
+}
+@media screen and (max-width: 360px) {
+    #menu-top-nav {
+        color: #fff;
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    .inner h1{
+        color: #00c4b2;
+        font-size: 38px;
     }
 }
 #menu-top-nav li {
@@ -45,18 +61,7 @@ nav h1{
         color: #FFF;
         padding: 0 4px;
 }
-@media screen and (max-width: 360px) {
-    #menu-top-nav {
-        color: #fff;
-        font-size: 12px;
-        position: absolute;
-        right: 0;
-        top: 10px;
-    }
-    #lead_headline{
-        font-size: 38px;
-    }
-}
+
 /*}*/
 /*@media screen and (max-width: 480px) {
     #menu-top-nav {
@@ -115,9 +120,6 @@ nav h1{
     vertical-align: middle;
     text-align: center;
 }
-.inner h1{
-    color: #00c4b2;
-    font-size: -webkit-xxx-large;
-}
+
 
 

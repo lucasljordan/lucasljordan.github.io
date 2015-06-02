@@ -27,6 +27,7 @@ nav h1{
 }
 
 /*@media screen and (min-width: 640px) {*/
+@media screen and (min-width: 360px) {
     #menu-top-nav {
         color: #fff;
         font-size: 14px;
@@ -34,16 +35,25 @@ nav h1{
         right: 0;
         top: 10px;
     }
-
-    #menu-top-nav li {
+}
+#menu-top-nav li {
         float: left;
         position: relative;
-    }
+}
 
-    #menu-top-nav li a {
+#menu-top-nav li a {
         color: #FFF;
         padding: 0 4px;
+}
+@media screen and (max-width: 360px) {
+    #menu-top-nav {
+        color: #fff;
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        top: 10px;
     }
+}
 /*}*/
 /*@media screen and (max-width: 480px) {
     #menu-top-nav {

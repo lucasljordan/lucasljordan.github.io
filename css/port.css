@@ -53,6 +53,9 @@ nav h1{
         right: 0;
         top: 10px;
     }
+    #lead_headline{
+        font-size: 38px;
+    }
 }
 /*}*/
 /*@media screen and (max-width: 480px) {

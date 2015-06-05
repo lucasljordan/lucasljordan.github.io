@@ -16,7 +16,7 @@ header{
  }
 nav{
     background-color: #314555;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
 }
@@ -82,7 +82,7 @@ nav h1{
     background-color: #314555;
 }
 .container {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     padding-top: 60px;
 }

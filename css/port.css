@@ -11,9 +11,6 @@
     border:0;
     min-width: 100vw;
 }
-header{
-    height: 35px;
- }
 nav{
     background-color: #314555;
     width: 90%;
@@ -40,13 +37,13 @@ nav h1{
     color: #00c4b2;
     top: 10px;
 }
-#navigation a {
+/*#navigation a {
     font-size: 14px;
     padding-left: 15px;
     padding-right: 15px;
     color: white;
     text-decoration: none;
-}
+}*/
 
 #navigation a:hover {
     color: grey;

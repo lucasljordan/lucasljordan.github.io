@@ -145,6 +145,7 @@ nav h1{
     color: #fff;
     font-size: 14px;
     position: absolute;
+    right: 0;
     top: 10px;
 }
 #footer-nav li {

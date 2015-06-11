@@ -141,22 +141,6 @@ nav h1{
     margin: 0 auto;
     position: relative;
 }
-#footer-nav {
-    color: #fff;
-    font-size: 14px;
-    position: absolute;
-    right: 0;
-    top: 10px;
-}
-#footer-nav li {
-    float: left;
-    position: relative;
-}
-
-#footer-nav li a {
-    color: #FFF;
-    padding: 0 4px;
-}
 .inner {
     width: 60%;
     vertical-align: middle;

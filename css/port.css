@@ -32,11 +32,13 @@ nav h1{
     width: 100%;
     color: #ffffff;
     height: 35px;
-    /* Adds shadow to the bottom of the bar */
     -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
-    /* Adds the transparent background */
+}
+#navigation h1{
+    color: #00c4b2;
+    top: 10px;
 }
 #navigation a {
     font-size: 14px;

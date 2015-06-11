@@ -3,7 +3,7 @@
     color: #FFF;
 }
 .body{
-    overflow-x:hidden;
+    overflow-x:hidden !important;
     overflow: hidden !important;
     background-color: #eeeeee;
     margin:0;
@@ -12,12 +12,7 @@
     min-width: 100vw;
 }
 header{
-     /*background-color: #314555;*/
     height: 35px;
-    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
-    overflow: visible;
  }
 nav{
     background-color: #314555;
@@ -30,6 +25,36 @@ nav h1{
     position: absolute;
     top: 10px;
 }
+/*FIXED NAV*/
+#navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #ffffff;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    /* Adds shadow to the bottom of the bar */
+    -webkit-box-shadow: 0px 0px 8px 0px #000000;
+    -moz-box-shadow: 0px 0px 8px 0px #000000;
+    box-shadow: 0px 0px 8px 0px #000000;
+    /* Adds the transparent background */
+    background-color: rgba(1, 1, 1, 0.8);
+    color: rgba(1, 1, 1, 0.8);
+}
+#navigation a {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+#navigation a:hover {
+    color: grey;
+}
+
+/*END FIXED NAV*/
 
 @media screen and (min-width: 360px) {
     #menu-top-nav {

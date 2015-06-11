@@ -14,9 +14,10 @@
 header{
      /*background-color: #314555;*/
     height: 35px;
-    -webkit-box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+    overflow: visible;
  }
 nav{
     background-color: #314555;

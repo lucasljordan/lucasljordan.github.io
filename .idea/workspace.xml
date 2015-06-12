@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="72381099-47da-4a1f-8036-5f3cf1e9375f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/port.css" afterPath="$PROJECT_DIR$/css/port.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2.0.html" afterPath="$PROJECT_DIR$/portfolio2.0.html" />
     </list>
     <ignored path="lucasljordan.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,8 +42,8 @@
       <file leaf-file-name="port.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/port.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.93108106" vertical-offset="1997" max-vertical-offset="2856">
-              <caret line="158" column="20" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.95405406" vertical-offset="1997" max-vertical-offset="2873">
+              <caret line="159" column="17" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -655,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/port.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93108106" vertical-offset="1997" max-vertical-offset="2856">
-          <caret line="158" column="20" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.95405406" vertical-offset="1997" max-vertical-offset="2873">
+          <caret line="159" column="17" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
           <folding />
         </state>
       </provider>

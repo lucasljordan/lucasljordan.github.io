@@ -159,5 +159,8 @@ nav h1{
     font-size: 20px;
     margin: 10px;
 }
+.footer-icon  a:hover {
+    color: grey;
+}
 
 

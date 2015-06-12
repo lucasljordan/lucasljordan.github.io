@@ -152,5 +152,11 @@ nav h1{
 #second-headline{
     font-size: 22px !important;
 }
+.footer-icon{
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 17px;
+    font-size: 20px;
+}
 
 

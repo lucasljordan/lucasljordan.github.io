@@ -99,6 +99,14 @@ nav h1{
         color: #00c4b2;
         font-size: 47px;
     }
+    .headline{
+        width: 97%;
+        padding: 5px;
+        margin: auto;
+        vertical-align: middle;
+        text-align: center;
+        border: solid;
+    }
     .headline h1{
         font-size: 47px;
     }
@@ -108,6 +116,14 @@ nav h1{
     .inner h1{
         color: #00c4b2;
         font-size: 28px;
+    }
+    .headline{
+        width: 97%;
+        padding: 5px;
+        margin: auto;
+        vertical-align: middle;
+        text-align: center;
+        border: solid;
     }
     .headline h1{
         font-size: 28px;

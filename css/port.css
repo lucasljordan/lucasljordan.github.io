@@ -61,6 +61,7 @@ nav h1{
     margin: auto;
     vertical-align: middle;
     text-align: center;
+    border: solid;
     }
     .headline h1{
         font-size: -webkit-xxx-large;

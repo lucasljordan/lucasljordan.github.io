@@ -43,6 +43,7 @@ nav h1{
 
 /*END FIXED NAV*/
 
+/* Desktop */
 @media screen and (min-width: 360px) {
     #menu-top-nav {
         color: #fff;
@@ -55,10 +56,16 @@ nav h1{
         color: #00c4b2;
         font-size: -webkit-xxx-large;
     }
+    .headline{
+    width: 25%;
+    vertical-align: middle;
+    text-align: center;
+    }
     .headline h1{
         font-size: -webkit-xxx-large;
     }
 }
+/* Medium */
 @media screen and (max-width: 360px) {
     #menu-top-nav {
         color: #fff;
@@ -75,6 +82,7 @@ nav h1{
         font-size: 38px;
     }
 }
+/* Mobile */
 @media screen and (min-width: 360px) and (max-width: 360px){
     .inner h1{
         color: #00c4b2;
@@ -84,6 +92,7 @@ nav h1{
         font-size: 47px;
     }
 }
+/* Smaller than Mobile */
 @media screen and (max-width: 360px) {
     .inner h1{
         color: #00c4b2;
@@ -154,11 +163,6 @@ nav h1{
     width: 60%;
     vertical-align: middle;
     text-align: left;
-}
-.headline {
-    width: 60%;
-    vertical-align: middle;
-    text-align: center;
 }
 .inner p{
     color: #fff;

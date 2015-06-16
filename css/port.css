@@ -81,6 +81,14 @@ nav h1{
         color: #00c4b2;
         font-size: 38px;
     }
+    .headline{
+        width: 97%;
+        padding: 5px;
+        margin: auto;
+        vertical-align: middle;
+        text-align: center;
+        border: solid;
+    }
     .headline h1{
         font-size: 38px;
     }

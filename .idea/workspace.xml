@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="72381099-47da-4a1f-8036-5f3cf1e9375f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/port.css" afterPath="$PROJECT_DIR$/css/port.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2.0.html" afterPath="$PROJECT_DIR$/portfolio2.0.html" />
     </list>
     <ignored path="lucasljordan.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="portfolio2.0.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="portfolio2.0.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/portfolio2.0.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5" vertical-offset="204" max-vertical-offset="2414">
+            <state vertical-scroll-proportion="0.3152639" vertical-offset="204" max-vertical-offset="2414">
               <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -40,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="port.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="port.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/port.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3066104" vertical-offset="836" max-vertical-offset="3264">
-              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+            <state vertical-scroll-proportion="-17.48276" vertical-offset="836" max-vertical-offset="3281">
+              <caret line="79" column="14" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -92,8 +91,8 @@
         <option value="$PROJECT_DIR$/metoniz.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/themify-icons/index.html" />
-        <option value="$PROJECT_DIR$/css/port.css" />
         <option value="$PROJECT_DIR$/portfolio2.0.html" />
+        <option value="$PROJECT_DIR$/css/port.css" />
       </list>
     </option>
   </component>
@@ -651,21 +650,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/port.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.48276" vertical-offset="836" max-vertical-offset="3281">
+          <caret line="79" column="14" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2.0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5" vertical-offset="204" max-vertical-offset="2414">
+        <state vertical-scroll-proportion="0.3152639" vertical-offset="204" max-vertical-offset="2414">
           <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/port.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3066104" vertical-offset="836" max-vertical-offset="3264">
-          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>

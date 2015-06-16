@@ -58,6 +58,7 @@ nav h1{
     }
     .headline{
     width: 25%;
+    margin: auto;
     vertical-align: middle;
     text-align: center;
     }

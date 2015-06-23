@@ -62,11 +62,12 @@ nav h1{
     margin: auto;
     vertical-align: middle;
     text-align: center;
-    border-top: solid;  
+    border-top: solid;
     border-bottom: solid;
     }
     .headline h1{
         font-size: -webkit-xxx-large;
+        color: #00c4b2;
     }
 }
 /* Medium */
@@ -93,6 +94,7 @@ nav h1{
     }
     .headline h1{
         font-size: 38px;
+        color: #00c4b2;
     }
 }
 /* Mobile */
@@ -112,6 +114,7 @@ nav h1{
     }
     .headline h1{
         font-size: 47px;
+        color: #00c4b2;
     }
 }
 /* Smaller than Mobile */
@@ -131,6 +134,7 @@ nav h1{
     }
     .headline h1{
         font-size: 28px;
+        color: #00c4b2;
     }
 }
 

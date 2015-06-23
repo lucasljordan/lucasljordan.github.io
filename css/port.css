@@ -57,6 +57,14 @@ nav h1{
         color: #00c4b2;
         font-size: -webkit-xxx-large;
     }
+    .headline-image{
+        width: 90%;
+        padding: 5px;
+        margin: auto;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 21px;
+    }
     .headline{
     width: 90%;
     padding: 5px;
@@ -85,6 +93,14 @@ nav h1{
         color: #00c4b2;
         font-size: 38px;
     }
+    .headline-image{
+        width: 90%;
+        padding: 5px;
+        margin: auto;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 21px;
+    }
     .headline{
         width: 90%;
         padding: 5px;
@@ -106,6 +122,14 @@ nav h1{
         color: #00c4b2;
         font-size: 47px;
     }
+    .headline-image{
+        width: 90%;
+        padding: 5px;
+        margin: auto;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 21px;
+    }
     .headline{
         width: 90%;
         padding: 5px;
@@ -126,6 +150,14 @@ nav h1{
     .inner h1{
         color: #00c4b2;
         font-size: 28px;
+    }
+    .headline-image{
+        width: 90%;
+        padding: 5px;
+        margin: auto;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 21px;
     }
     .headline{
         width: 90%;
@@ -224,5 +256,7 @@ nav h1{
 .footer-icon  a:hover {
     color: grey;
 }
-
+.img-circle{
+    border-radius: 50%;
+}
 

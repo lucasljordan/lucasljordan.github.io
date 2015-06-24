@@ -14,7 +14,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'/>
 
     <script src="js/Modernizr.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="js/respondthanks.html.min.js"></script>
 
 
 
@@ -23,9 +23,9 @@
     <nav>
         <h1 id="menu-top-header">Lucas L Jordan</h1>
         <ul id="menu-top-nav">
-            <li class=""><a href="#">about</a></li>
-            <li class=""><a href="#">services</a></li>
-            <li class=""><a href="#">portfolio</a></li>
+            <li class=""><a href="/about.html">about</a></li>
+            <li class=""><a href="/services.html">services</a></li>
+            <li class=""><a href="/portfolio.html">portfolio</a></li>
             <li class=""><a href="/contact.html">contact</a></li>
         </ul>
     </nav>
@@ -63,7 +63,12 @@
 <!-- include extern jQuery file but fall back to local file if extern one fails to load !-->
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script type="text/javascript">window.jQuery || document.write('<script type="text\/javascript" src="js\/1.7.2.jquery.min"><\/script>')</script>
-
+<script type="text/javascript">
+    $("#menu-top-header").click(function() {
+        window.location.href = "/portfolio2.0.html";
+        return false;//Just in case if it is a link prevent default behavior
+    });
+</script>
 <!-- Google Analytics   -->
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

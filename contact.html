@@ -21,7 +21,7 @@
 <body>
 <div id="navigation" class="dark">
     <nav>
-        <h1><a href="#">Lucas L Jordan</a></h1>
+        <h1>Lucas L Jordan</h1>
         <ul id="menu-top-nav">
             <li class=""><a href="#">about</a></li>
             <li class=""><a href="#">services</a></li>
@@ -50,7 +50,10 @@
                   method="POST">
                 <input type="text" name="name">
                 <input type="text" name="_replyto" placeholder="Your email" />
+                <textarea name="message" rows="5" placeholder="Your message"></textarea>
                 <input type="hidden" name="_next" value="https://lucasljordan.github.io/thanks.html" />
+                <input type="hidden" name="_subject" value="New Contact Request:" />
+                <input type="text" name="_gotcha" style="display:none" />
                 <input type="submit" value="Send">
             </form>
         </div>

@@ -10,6 +10,7 @@
     padding:0;
     border:0;
     min-width: 100vw;
+    background-color: #314555;
 }
 nav{
     width: 90%;
@@ -206,6 +207,10 @@ nav h1{
 .divide40 {
     width: 100%;
     height: 40px;
+}
+.divide60 {
+    width: 100%;
+    height: 60px;
 }
 .divide80 {
     width: 100%;

@@ -262,6 +262,8 @@ nav h1{
 }
 .form-control{
     width: 100%
+    margin: 5px;
+    line-height: 20px;
 }
 .form-submit{
     background-color: #00c4b2;

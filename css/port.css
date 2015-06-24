@@ -2,7 +2,7 @@
     font-family: 'Helvetica Neue', arial, sans-serif;
     color: #FFF;
 }
-.body{
+body{
     overflow-x:hidden !important;
     overflow: hidden !important;
     margin:0;

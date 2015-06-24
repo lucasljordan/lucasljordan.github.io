@@ -257,4 +257,13 @@ nav h1{
 .img-circle{
     border-radius: 50%;
 }
-
+.contact{
+    width: 60%;
+}
+.form-control{
+    width: 100%
+}
+.form-submit{
+    background-color: #00c4b2;
+    color: #fff;
+}

@@ -266,4 +266,7 @@ nav h1{
 .form-submit{
     background-color: #00c4b2;
     color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
 }

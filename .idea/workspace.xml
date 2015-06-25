@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72381099-47da-4a1f-8036-5f3cf1e9375f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/port.css" afterPath="$PROJECT_DIR$/css/port.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
     </list>
     <ignored path="lucasljordan.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.538462" vertical-offset="319" max-vertical-offset="1802">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.660485" vertical-offset="319" max-vertical-offset="1802">
+              <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#input#4;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -92,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="port.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="port.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/port.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.859353" vertical-offset="2874" max-vertical-offset="5457">
+            <state vertical-scroll-proportion="-21.068966" vertical-offset="2874" max-vertical-offset="5457">
               <caret line="205" column="13" selection-start-line="205" selection-start-column="13" selection-end-line="205" selection-end-column="13" />
               <folding />
             </state>
@@ -149,8 +149,8 @@
         <option value="$PROJECT_DIR$/services.html" />
         <option value="$PROJECT_DIR$/portfolio.html" />
         <option value="$PROJECT_DIR$/portfolio2.0.html" />
-        <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/css/port.css" />
+        <option value="$PROJECT_DIR$/contact.html" />
       </list>
     </option>
   </component>
@@ -676,16 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.538462" vertical-offset="319" max-vertical-offset="1802">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#input#4;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2.0.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.3461537" vertical-offset="2104" max-vertical-offset="2873">
@@ -699,9 +689,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/port.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.859353" vertical-offset="2874" max-vertical-offset="5457">
+        <state vertical-scroll-proportion="-21.068966" vertical-offset="2874" max-vertical-offset="5457">
           <caret line="205" column="13" selection-start-line="205" selection-start-column="13" selection-end-line="205" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.660485" vertical-offset="319" max-vertical-offset="1802">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#input#4;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

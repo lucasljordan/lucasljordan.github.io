@@ -203,7 +203,10 @@ nav h1:hover{
         font-family: georgia;
     }
 }
-
+.inner li.a{
+    color: #00c4b2;
+    text-decoration: none;
+}
 #menu-top-nav li {
         float: left;
         position: relative;

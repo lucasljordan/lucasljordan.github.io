@@ -203,7 +203,7 @@ nav h1:hover{
         font-family: georgia;
     }
 }
-.inner li.a{
+.inner ul.li.a{
     color: #00c4b2;
     text-decoration: none;
 }

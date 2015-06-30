@@ -57,6 +57,11 @@ nav h1:hover{
         top: 10px;
 
     }
+    .inner {
+        width: 60%;
+        vertical-align: middle;
+        text-align: left;
+    }
     .inner h1{
         color: #00c4b2;
         font-size: -webkit-xxx-large;
@@ -100,6 +105,11 @@ nav h1:hover{
         right: 0;
         top: 10px;
     }
+    .inner {
+        width: 1000%;
+        vertical-align: middle;
+        text-align: left;
+    }
     .inner h1{
         color: #00c4b2;
         font-size: 38px;
@@ -140,6 +150,11 @@ nav h1:hover{
         font-size: 47px;
         font-family: georgia;
     }
+    .inner {
+        width: 1000%;
+        vertical-align: middle;
+        text-align: left;
+    }
     .inner h2{
         color: #00c4b2;
         font-size: 21px;
@@ -170,6 +185,11 @@ nav h1:hover{
 }
 /* Smaller than Mobile */
 @media screen and (max-width: 360px) {
+    .inner {
+        width: 1000%;
+        vertical-align: middle;
+        text-align: left;
+    }
     .inner h1{
         color: #00c4b2;
         font-size: 28px;
@@ -273,11 +293,6 @@ nav h1:hover{
     width: 60%;
     margin: 0 auto;
     position: relative;
-}
-.inner {
-    width: 60%;
-    vertical-align: middle;
-    text-align: left;
 }
 .inner p{
     color: #fff;

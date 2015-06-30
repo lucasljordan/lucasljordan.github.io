@@ -106,7 +106,7 @@ nav h1:hover{
         top: 10px;
     }
     .inner {
-        width: 1000%;
+        width: 100%;
         vertical-align: middle;
         text-align: left;
     }
@@ -151,7 +151,7 @@ nav h1:hover{
         font-family: georgia;
     }
     .inner {
-        width: 1000%;
+        width: 100%;
         vertical-align: middle;
         text-align: left;
     }
@@ -186,7 +186,7 @@ nav h1:hover{
 /* Smaller than Mobile */
 @media screen and (max-width: 360px) {
     .inner {
-        width: 1000%;
+        width: 100%;
         vertical-align: middle;
         text-align: left;
     }

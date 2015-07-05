@@ -95,6 +95,10 @@ nav h1:hover{
         color: #00c4b2;
         font-family: georgia;
     }
+    .service{
+        width: 50%;
+        float: left;
+    }
 }
 /* Medium */
 @media screen and (max-width: 360px) {
@@ -142,6 +146,10 @@ nav h1:hover{
         color: #00c4b2;
         font-family: georgia;
     }
+    .service{
+        width: 100%;
+        float: left;
+    }
 }
 /* Mobile */
 @media screen and (min-width: 360px) and (max-width: 360px){
@@ -182,6 +190,10 @@ nav h1:hover{
         color: #00c4b2;
         font-family: georgia;
     }
+    .service{
+        width: 100%;
+        float: left;
+    }
 }
 /* Smaller than Mobile */
 @media screen and (max-width: 360px) {
@@ -221,6 +233,10 @@ nav h1:hover{
         font-size: 28px;
         color: #00c4b2;
         font-family: georgia;
+    }
+    .service{
+        width: 100%;
+        float: left;
     }
 }
 .inner ul li a{
@@ -327,7 +343,4 @@ nav h1:hover{
     padding: 5px;
     border-radius: 4px;
     margin: 5px;
-}
-.service{
-    width: 50%;
 }

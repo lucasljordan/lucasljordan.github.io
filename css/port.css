@@ -344,6 +344,11 @@ nav h1:hover{
     border-radius: 4px;
     margin: 5px;
 }
+.service span{
+    position: absolute;
+    top: 0px;
+}
 .service h2{
     color: #00c4b2;
+    margin-left: 60px;
 }

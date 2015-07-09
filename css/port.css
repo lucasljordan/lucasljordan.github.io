@@ -106,6 +106,13 @@ nav h1:hover{
         font-size: 3.6vh;
     }
 }
+/*Iphone 6*/
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    .service{
+        width: 100%;
+        float: left;
+    }
+}
 /* Medium */
 @media screen and (max-width: 360px) {
     #menu-top-nav {

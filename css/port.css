@@ -352,3 +352,5 @@ nav h1:hover{
     color: #00c4b2;
     margin-left: 60px;
 }
+.service-icon{width:20%; top: 0px;}
+.service-text{width:80%;float: left;}

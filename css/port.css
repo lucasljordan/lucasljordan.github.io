@@ -154,7 +154,7 @@ nav h1:hover{
         float: left;
     }
     .service h2{
-        font-size: 2.6vh;
+        font-size: 2.0vh;
     }
 }
 /* Mobile */
@@ -201,7 +201,7 @@ nav h1:hover{
         float: left;
     }
     .service h2{
-        font-size: 2.6vh;
+        font-size: 2.0vh;
     }
 }
 /* Smaller than Mobile */
@@ -248,7 +248,7 @@ nav h1:hover{
         float: left;
     }
     .service h2{
-        font-size: 2.6vh;
+        font-size: 2.0vh;
     }
 }
 .inner ul li a{

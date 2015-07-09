@@ -352,6 +352,7 @@ nav h1:hover{
     display: inline-block;
     color: #00c4b2;
     margin-left: 60px;
+    font-size: 3.0vh;
 }
 .service-icon{width:20%; top: 0px;}
 .service-text{width:80%;float: left;}

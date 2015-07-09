@@ -24,7 +24,8 @@
         <h1 id="menu-top-header">Lucas L Jordan</h1>
         <ul id="menu-top-nav">
             <li class=""><a href="/about.html">about</a></li>
-            <li class=""><a href="/services.html">services</a></li>
+            <!--<li class=""><a href="/services.html">services</a></li>-->
+            <li class=""><a href="#" class="scroll-link" data-id="Section-4">services</a></li>
             <li class=""><a href="/portfolio.html">work</a></li>
             <li class=""><a href="/contact.html">contact</a></li>
         </ul>
@@ -178,9 +179,10 @@
                     <li><b>Twitter: </b><a href="https://twitter.com/Lucas_L_Jordan" target="_blank">@Lucas_L_Jordan</a></li>
                 </ul><br>
                 </p>
-                <div class="divide150"></div>
             </div>
         </div>
+        <p align="center"><a href="#" class="scroll-top back-to-top">Scroll to Top &uarr;</a></p>
+        <div class="divide150"></div>
     </div>
 </div>
 <div class="divide10"></div>
@@ -203,6 +205,35 @@
         window.location.href = "/portfolio2.0.html";
         return false;
     });
+    $(document).ready(function() {
+        // navigation click actions
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
 </script>
 <!-- Google Analytics   -->
 <script>

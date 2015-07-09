@@ -100,7 +100,10 @@ nav h1:hover{
         float: left;
     }
     .service h2{
-        font-size: 3.5vh;
+        font-size: 5vh;
+    }
+    .service p{
+        font-size: 3.6vh;
     }
 }
 /* Medium */
@@ -156,6 +159,9 @@ nav h1:hover{
     .service h2{
         font-size: 2.0vh;
     }
+    .service p{
+        font-size: 2.0vh;
+    }
 }
 /* Mobile */
 @media screen and (min-width: 360px) and (max-width: 360px){
@@ -203,6 +209,9 @@ nav h1:hover{
     .service h2{
         font-size: 2.0vh;
     }
+    .service p{
+        font-size: 2.0vh;
+    }
 }
 /* Smaller than Mobile */
 @media screen and (max-width: 360px) {
@@ -248,6 +257,9 @@ nav h1:hover{
         float: left;
     }
     .service h2{
+        font-size: 2.0vh;
+    }
+    .service p{
         font-size: 2.0vh;
     }
 }
@@ -366,7 +378,7 @@ nav h1:hover{
     margin-left: 20px;
 }
 .service p{
-    margin-left: 54px;
+    margin-left: 80px;
 }
 .service-icon{width:20%; top: 0px;}
 .service-text{width:80%;float: left;}

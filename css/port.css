@@ -349,6 +349,7 @@ nav h1:hover{
     top: 0px;
 }
 .service h2{
+    display: inline-block;
     color: #00c4b2;
     margin-left: 60px;
 }

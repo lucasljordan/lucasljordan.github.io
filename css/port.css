@@ -99,6 +99,9 @@ nav h1:hover{
         width: 50%;
         float: left;
     }
+    .service h2{
+        font-size: 3.5vh;
+    }
 }
 /* Medium */
 @media screen and (max-width: 360px) {
@@ -150,6 +153,9 @@ nav h1:hover{
         width: 100%;
         float: left;
     }
+    .service h2{
+        font-size: 2.6vh;
+    }
 }
 /* Mobile */
 @media screen and (min-width: 360px) and (max-width: 360px){
@@ -194,6 +200,9 @@ nav h1:hover{
         width: 100%;
         float: left;
     }
+    .service h2{
+        font-size: 2.6vh;
+    }
 }
 /* Smaller than Mobile */
 @media screen and (max-width: 360px) {
@@ -237,6 +246,9 @@ nav h1:hover{
     .service{
         width: 100%;
         float: left;
+    }
+    .service h2{
+        font-size: 2.6vh;
     }
 }
 .inner ul li a{
@@ -352,7 +364,6 @@ nav h1:hover{
     display: inline-block;
     color: #00c4b2;
     margin-left: 60px;
-    font-size: 3.0vh;
 }
 .service-icon{width:20%; top: 0px;}
 .service-text{width:80%;float: left;}

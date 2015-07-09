@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72381099-47da-4a1f-8036-5f3cf1e9375f" name="Default" comment="" />
+    <list default="true" id="72381099-47da-4a1f-8036-5f3cf1e9375f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/port.css" afterPath="$PROJECT_DIR$/css/port.css" />
+    </list>
     <ignored path="lucasljordan.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="portfolio2.0.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="portfolio2.0.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2.0.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9029957" vertical-offset="1526" max-vertical-offset="3383">
-              <caret line="127" column="34" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
+            <state vertical-scroll-proportion="-7.3461537" vertical-offset="1526" max-vertical-offset="3383">
+              <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#input#4;n#form#0;n#div#1;n#div#1;n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -90,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="port.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="port.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/port.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5363" max-vertical-offset="6171">
-              <caret line="354" column="21" selection-start-line="354" selection-start-column="21" selection-end-line="354" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.23769338" vertical-offset="5101" max-vertical-offset="6358">
+              <caret line="310" column="19" selection-start-line="310" selection-start-column="19" selection-end-line="311" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -147,8 +149,8 @@
         <option value="$PROJECT_DIR$/services.html" />
         <option value="$PROJECT_DIR$/portfolio.html" />
         <option value="$PROJECT_DIR$/thanks.html" />
-        <option value="$PROJECT_DIR$/css/port.css" />
         <option value="$PROJECT_DIR$/portfolio2.0.html" />
+        <option value="$PROJECT_DIR$/css/port.css" />
       </list>
     </option>
   </component>
@@ -266,7 +268,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -684,22 +686,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/port.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5363" max-vertical-offset="6171">
-          <caret line="354" column="21" selection-start-line="354" selection-start-column="21" selection-end-line="354" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2.0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9029957" vertical-offset="1526" max-vertical-offset="3383">
-          <caret line="127" column="34" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
+        <state vertical-scroll-proportion="-7.3461537" vertical-offset="1526" max-vertical-offset="3383">
+          <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#input#4;n#form#0;n#div#1;n#div#1;n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/port.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23769338" vertical-offset="5101" max-vertical-offset="6358">
+          <caret line="310" column="19" selection-start-line="310" selection-start-column="19" selection-end-line="311" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

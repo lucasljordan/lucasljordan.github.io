@@ -363,7 +363,10 @@ nav h1:hover{
 .service h2{
     display: inline-block;
     color: #00c4b2;
-    margin-left: 60px;
+    margin-left: 20px;
+}
+.service p{
+    margin-left: 54px;
 }
 .service-icon{width:20%; top: 0px;}
 .service-text{width:80%;float: left;}

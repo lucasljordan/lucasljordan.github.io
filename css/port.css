@@ -384,6 +384,14 @@ nav h1:hover{
     border-radius: 4px;
     margin: 5px;
 }
+#btn-contact{
+    background-color: #00c4b2;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px;
+}
 .service span{
 
     top: 0px;

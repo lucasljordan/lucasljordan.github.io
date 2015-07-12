@@ -24,7 +24,7 @@
         <h1 id="menu-top-header">Lucas L Jordan</h1>
         <ul id="menu-top-nav">
             <li class=""><a href="/about.html">about</a></li>
-            <!--<li class=""><a href="/services.html">services</a></li>-->
+            <li style="display: none;"><a href="#" id="home-link" class="scroll-link" data-id="Section-1"></a></li>
             <li class=""><a href="#" class="scroll-link" data-id="Section-4">services</a></li>
             <li class=""><a href="/portfolio.html">work</a></li>
             <li class=""><a href="/contact.html">contact</a></li>
@@ -159,7 +159,7 @@
                 <div class="divide10"></div>
                 <ul>
                     <li><b>Email:  </b><a href="mailto:LucasL.Jordan@gmail.com?Subject=Contact%%20Enquiry" target="_top"> LucasL.Jordan@gmail.com</a></li>
-                    <li><b>Linkedin: </b><a href="htps://linkedin.com/in/lucasljordan/" target="_blank">https://linkedin.com/in/lucasljordan/</a></li>
+                    <li><b>Linkedin: </b><a href="htps://linkedin.com/in/lucasljordan" target="_blank">https://linkedin.com/in/lucasljordan</a></li>
                     <li><b>Twitter: </b><a href="https://twitter.com/Lucas_L_Jordan" target="_blank">@Lucas_L_Jordan</a></li>
                 </ul><br>
                 </p>
@@ -186,8 +186,13 @@
 <script type="text/javascript">window.jQuery || document.write('<script type="text\/javascript" src="js\/1.7.2.jquery.min"><\/script>')</script>
 <script type="text/javascript">
     $("#menu-top-header").click(function() {
-        window.location.href = "/portfolio2.0.html";
-        return false;
+        var uri = window.location.pathname.substr(1);
+        if(uri == 'portfolio2.0.html' || uri == 'index.html'){
+            $("#home-link").click();
+        }
+        else{window.location.href = "/portfolio2.0.html";
+            return false;}
+
     });
     $(document).ready(function() {
         // navigation click actions

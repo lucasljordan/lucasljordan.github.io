@@ -323,6 +323,10 @@ nav h1:hover{
     width: 100%;
     height: 150px;
 }
+.divide210 {
+    width: 100%;
+    height: 210px;
+}
 .dark {
     background: -webkit-linear-gradient(#424242, #2E2E2E); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#424242, #2E2E2E); /* For Opera 11.1 to 12.0 */

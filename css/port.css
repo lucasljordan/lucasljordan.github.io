@@ -391,6 +391,7 @@ nav h1:hover{
     padding: 5px;
     border-radius: 4px;
     margin: 5px;
+    text-decoration: none;
 }
 .service span{
 

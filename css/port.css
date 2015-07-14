@@ -405,5 +405,9 @@ nav h1:hover{
 .service p{
     margin-left: 80px;
 }
+.unset{
+    width:100%;
+    float: left;
+}
 .service-icon{width:20%; top: 0px;}
 .service-text{width:80%;float: left;}

@@ -114,7 +114,7 @@ nav h1:hover{
     }
     .inner h1{
         color: #00c4b2;
-        font-size: -webkit-xxx-large;
+        font-size: 30px;
         font-family: georgia;
     }
     .inner h2{
@@ -141,7 +141,7 @@ nav h1:hover{
     font-size: 21px;
     }
     .headline h1{
-        font-size: -webkit-xxx-large;
+        font-size: 30px;
         color: #00c4b2;
         font-family: georgia;
     }

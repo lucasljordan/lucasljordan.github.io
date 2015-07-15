@@ -1,3 +1,15 @@
+/* resets */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 * {
     font-family: 'Lato', sans-serif;
     color: #FFF;
@@ -94,23 +106,23 @@ nav h1:hover{
         color: #00c4b2;
         font-family: georgia;
     }
-    .service{
+    /*.service{
         width: 50%;
         float: left;
-    }
+    }*/
     .service h2{
-        font-size: 4vh;
+        font-size: 3vh;
     }
     .service p{
-        font-size: 3.0vh;
+        font-size: 2.0vh;
     }
 }
 /*Iphone 6 & iphone 6 plus*/
 @media screen and (min-width: 375px) and (max-width: 414px) {
-    .service{
+    /*.service{
         width: 100%;
         float: left;
-    }
+    }*/
     .service h2 {
         font-size: 2.7vh;
     }
@@ -164,10 +176,10 @@ nav h1:hover{
         color: #00c4b2;
         font-family: georgia;
     }
-    .service{
+    /*.service{
         width: 100%;
         float: left;
-    }
+    }*/
     .service h2{
         font-size: 2.0vh;
     }
@@ -214,10 +226,10 @@ nav h1:hover{
         color: #00c4b2;
         font-family: georgia;
     }
-    .service{
+    /*.service{
         width: 100%;
         float: left;
-    }
+    }*/
     .service h2{
         font-size: 2.0vh;
     }
@@ -264,10 +276,10 @@ nav h1:hover{
         color: #00c4b2;
         font-family: georgia;
     }
-    .service{
+    /*.service{
         width: 100%;
         float: left;
-    }
+    }*/
     .service h2{
         font-size: 2.0vh;
     }
@@ -393,7 +405,6 @@ nav h1:hover{
     text-decoration: none;
 }
 .service span{
-
     top: 0px;
 }
 .service h2{

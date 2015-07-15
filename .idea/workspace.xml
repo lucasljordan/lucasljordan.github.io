@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="72381099-47da-4a1f-8036-5f3cf1e9375f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/responsive columns test.html" afterPath="$PROJECT_DIR$/responsive columns test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
     </list>
     <ignored path="lucasljordan.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="portfolio2.0.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2.0.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.961538" vertical-offset="2091" max-vertical-offset="4743">
-              <caret line="152" column="12" selection-start-line="152" selection-start-column="12" selection-end-line="157" selection-end-column="16" />
+            <state vertical-scroll-proportion="-3.9230769" vertical-offset="1479" max-vertical-offset="4743">
+              <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#4;n#form#0;n#div#1;n#div#1;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -45,8 +44,8 @@
       <file leaf-file-name="responsive columns test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/responsive columns test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.95149785" vertical-offset="574" max-vertical-offset="1445">
-              <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.32097003" vertical-offset="489" max-vertical-offset="1462">
+              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -707,8 +706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2.0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.961538" vertical-offset="2091" max-vertical-offset="4743">
-          <caret line="152" column="12" selection-start-line="152" selection-start-column="12" selection-end-line="157" selection-end-column="16" />
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="1479" max-vertical-offset="4743">
+          <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="61" />
           <folding>
             <element signature="n#style#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#4;n#form#0;n#div#1;n#div#1;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -719,8 +718,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/responsive columns test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.95149785" vertical-offset="574" max-vertical-offset="1445">
-          <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.32097003" vertical-offset="489" max-vertical-offset="1462">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
           <folding />
         </state>
       </provider>

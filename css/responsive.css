@@ -72,3 +72,11 @@ h2 {
     }
 
 }
+.footer-icon {
+    top: 0;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 17px;
+    font-size: 20px;
+    margin: 10px;
+}

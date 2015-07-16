@@ -443,5 +443,10 @@ nav h1:hover{
     width:100%;
     float: left;
 }
-.service-icon{width:20%; top: 0px;}
-.service-text{width:80%;float: left;}
+.details{
+    margin-left: 20px;
+}
+.details p{
+    font-size: 18px;
+    font-weight: bold;
+}

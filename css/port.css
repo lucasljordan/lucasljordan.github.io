@@ -73,7 +73,7 @@ nav h1:hover{
     padding: 10px;
 }
 
-@media all and ( min-width: 600px ) {
+@media all and ( min-width: 927px ) {
 
     .col-2-3 {
         float: left;
@@ -300,10 +300,6 @@ nav h1:hover{
         color: #00c4b2;
         font-family: georgia;
     }
-    /*.service{
-        width: 100%;
-        float: left;
-    }*/
     .service h2{
         font-size: 22px;
     }

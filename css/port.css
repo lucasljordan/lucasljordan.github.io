@@ -11,7 +11,6 @@
 }
 
 * {
-    font-family: 'Lato', sans-serif;
     color: #FFF;
 }
 body{
@@ -20,6 +19,8 @@ body{
     border:0;
     min-width: 100%;
     background-color: #314555;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
 }
 nav{
     width: 90%;

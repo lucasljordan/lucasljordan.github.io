@@ -447,6 +447,7 @@ nav h1:hover{
     margin-left: 20px;
 }
 .details p{
+    margin-left: 0px;
     font-size: 18px;
     font-weight: bold;
 }

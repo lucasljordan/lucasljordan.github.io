@@ -162,15 +162,7 @@ nav h1:hover{
         font-size: 16px;
     }
 }
-/*Iphone 4 */
-@media screen and (min-width: 320px) and (max-width: 320px) {
-    .service h2 {
-        font-size: 15px;
-    }
-    .service p {
-        font-size: 16px;
-    }
-}
+
 /* Medium */
 @media screen and (max-width: 360px) {
     #menu-top-nav {
@@ -313,6 +305,15 @@ nav h1:hover{
         font-size: 19px;
     }
     .service p{
+        font-size: 16px;
+    }
+}
+/*Iphone 4 */
+@media screen and (min-width: 320px) and (max-width: 320px) {
+    .service h2 {
+        font-size: 15px;
+    }
+    .service p {
         font-size: 16px;
     }
 }

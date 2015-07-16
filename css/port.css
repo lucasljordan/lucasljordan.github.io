@@ -73,7 +73,7 @@ nav h1:hover{
     padding: 10px;
 }
 
-@media all and ( min-width: 927px ) {
+@media all and ( min-width: 600px ) {
 
     .col-2-3 {
         float: left;

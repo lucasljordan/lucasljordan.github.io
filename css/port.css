@@ -147,7 +147,7 @@ nav h1:hover{
         font-family: georgia;
     }
     .service h2{
-        font-size: 3vh;
+        font-size: 26px;
     }
     .service p{
         font-size: 18px;
@@ -156,7 +156,7 @@ nav h1:hover{
 /*Iphone 6 & iphone 6 plus*/
 @media screen and (min-width: 375px) and (max-width: 414px) {
     .service h2 {
-        font-size: 2.7vh;
+        font-size: 22px;
     }
     .service p {
         font-size: 16px;
@@ -209,7 +209,7 @@ nav h1:hover{
         font-family: georgia;
     }
     .service h2{
-        font-size: 2.0vh;
+        font-size: 22px;
     }
     .service p{
         font-size: 16px;
@@ -255,7 +255,7 @@ nav h1:hover{
         font-family: georgia;
     }
     .service h2{
-        font-size: 2.0vh;
+        font-size: 22px;
     }
     .service p{
         font-size: 16px;
@@ -305,7 +305,7 @@ nav h1:hover{
         float: left;
     }*/
     .service h2{
-        font-size: 2.0vh;
+        font-size: 22px;
     }
     .service p{
         font-size: 16px;

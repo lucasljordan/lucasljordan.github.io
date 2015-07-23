@@ -1,0 +1,7 @@
+#rewite rule for www to non www
+RewriteCond %{HTTP_HOST} ^www.lucasljordan.github.io$
+RewriteRule ^/?$ "https:\/\/lucasljordan.github.io\/" [R=301,L]
+
+#rewite rule for IP address to domain name
+RewriteCond %{HTTP_HOST} ^23.235.46.133
+RewriteRule (.*) https://lucasljordan.github.io/$1 [R=301,L]

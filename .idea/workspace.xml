@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72381099-47da-4a1f-8036-5f3cf1e9375f" name="Default" comment="" />
+    <list default="true" id="72381099-47da-4a1f-8036-5f3cf1e9375f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foodauditing.html" afterPath="$PROJECT_DIR$/foodauditing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/port.css" afterPath="$PROJECT_DIR$/css/port.css" />
+    </list>
     <ignored path="lucasljordan.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -58,18 +61,18 @@
       <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.923077" vertical-offset="813" max-vertical-offset="2465">
-              <caret line="63" column="88" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="88" />
+            <state vertical-scroll-proportion="-15.153846" vertical-offset="813" max-vertical-offset="2465">
+              <caret line="71" column="75" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="75" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foodauditing.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="foodauditing.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foodauditing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34699854" vertical-offset="783" max-vertical-offset="2244">
-              <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+            <state vertical-scroll-proportion="-9.115385" vertical-offset="681" max-vertical-offset="2244">
+              <caret line="54" column="33" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -117,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="port.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="port.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/port.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.137932" vertical-offset="7399" max-vertical-offset="8160">
-              <caret line="473" column="22" selection-start-line="473" selection-start-column="22" selection-end-line="473" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.9509379" vertical-offset="7467" max-vertical-offset="8245">
+              <caret line="478" column="22" selection-start-line="478" selection-start-column="22" selection-end-line="478" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -153,7 +156,6 @@
         <option value="$PROJECT_DIR$/portfolio2.0.html" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/port.css" />
         <option value="$PROJECT_DIR$/test1.html" />
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/about.html" />
@@ -163,6 +165,7 @@
         <option value="$PROJECT_DIR$/informationbrokers.html" />
         <option value="$PROJECT_DIR$/portfolio.html" />
         <option value="$PROJECT_DIR$/foodauditing.html" />
+        <option value="$PROJECT_DIR$/css/port.css" />
       </list>
     </option>
   </component>
@@ -635,14 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/port.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.137932" vertical-offset="7399" max-vertical-offset="8160">
-          <caret line="473" column="22" selection-start-line="473" selection-start-column="22" selection-end-line="473" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1923075" vertical-offset="1428" max-vertical-offset="2550">
@@ -699,21 +694,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/foodauditing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.115385" vertical-offset="681" max-vertical-offset="2244">
+          <caret line="54" column="33" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.923077" vertical-offset="813" max-vertical-offset="2465">
-          <caret line="63" column="88" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="88" />
+        <state vertical-scroll-proportion="-15.153846" vertical-offset="813" max-vertical-offset="2465">
+          <caret line="71" column="75" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foodauditing.html">
+    <entry file="file://$PROJECT_DIR$/css/port.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34699854" vertical-offset="783" max-vertical-offset="2244">
-          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.9509379" vertical-offset="7467" max-vertical-offset="8245">
+          <caret line="478" column="22" selection-start-line="478" selection-start-column="22" selection-end-line="478" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -473,3 +473,8 @@ nav h1:hover{
     color: #00c4b2;
     font-weight: bold;
 }
+.casestudy-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

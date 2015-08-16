@@ -434,6 +434,9 @@ nav h1:hover{
     margin: 5px;
     text-decoration: none;
 }
+.contact-details{
+    color: #00c4b2;
+}
 .service span{
     top: 0px;
 }

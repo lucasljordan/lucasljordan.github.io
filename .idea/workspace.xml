@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72381099-47da-4a1f-8036-5f3cf1e9375f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foodauditing.html" afterPath="$PROJECT_DIR$/foodauditing.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/informationbrokers.html" afterPath="$PROJECT_DIR$/informationbrokers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multyflex.html" afterPath="$PROJECT_DIR$/multyflex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lucasljordan.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,7 +61,7 @@
       <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.884615" vertical-offset="813" max-vertical-offset="2465">
+            <state vertical-scroll-proportion="0.0" vertical-offset="813" max-vertical-offset="2465">
               <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="67" selection-end-column="104" />
               <folding />
             </state>
@@ -72,7 +71,7 @@
       <file leaf-file-name="foodauditing.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foodauditing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.807693" vertical-offset="881" max-vertical-offset="2414">
+            <state vertical-scroll-proportion="0.0" vertical-offset="881" max-vertical-offset="2414">
               <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -81,21 +80,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="multyflex.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="multyflex.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/multyflex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.647145" vertical-offset="663" max-vertical-offset="2295">
+            <state vertical-scroll-proportion="-17.0" vertical-offset="663" max-vertical-offset="2295">
               <caret line="65" column="100" selection-start-line="65" selection-start-column="100" selection-end-line="65" selection-end-column="100" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="informationbrokers.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="informationbrokers.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/informationbrokers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.384615" vertical-offset="932" max-vertical-offset="2771">
-              <caret line="86" column="12" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="91" />
+            <state vertical-scroll-proportion="0.65153736" vertical-offset="915" max-vertical-offset="2771">
+              <caret line="80" column="164" selection-start-line="80" selection-start-column="164" selection-end-line="80" selection-end-column="164" />
               <folding />
             </state>
           </provider>
@@ -257,9 +256,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -267,6 +263,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -300,13 +299,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294271" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294271" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -325,9 +324,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23955432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -688,23 +687,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.884615" vertical-offset="813" max-vertical-offset="2465">
+        <state vertical-scroll-proportion="0.0" vertical-offset="813" max-vertical-offset="2465">
           <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="67" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/informationbrokers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.384615" vertical-offset="932" max-vertical-offset="2771">
-          <caret line="86" column="12" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodauditing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.807693" vertical-offset="881" max-vertical-offset="2414">
+        <state vertical-scroll-proportion="0.0" vertical-offset="881" max-vertical-offset="2414">
           <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -714,8 +705,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/multyflex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.647145" vertical-offset="663" max-vertical-offset="2295">
+        <state vertical-scroll-proportion="-17.0" vertical-offset="663" max-vertical-offset="2295">
           <caret line="65" column="100" selection-start-line="65" selection-start-column="100" selection-end-line="65" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/informationbrokers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65153736" vertical-offset="915" max-vertical-offset="2771">
+          <caret line="80" column="164" selection-start-line="80" selection-start-column="164" selection-end-line="80" selection-end-column="164" />
           <folding />
         </state>
       </provider>

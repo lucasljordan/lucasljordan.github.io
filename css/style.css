@@ -14,17 +14,17 @@ body {
 }
 /* Type will scale with document */
 h1 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #00c4b2;
   font-family: georgia;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 1rem;
   color: #00c4b2;
   font-family: georgia;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 0.5rem;
   color: #00c4b2;
   font-family: georgia;
 }

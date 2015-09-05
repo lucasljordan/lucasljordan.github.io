@@ -16,7 +16,7 @@ body {
 }
 section{
   width:  90%;
-  margin: 0 auto;
+  margin: 0 0 40px 0;
 }
 /* Type will scale with document */
 h1 {

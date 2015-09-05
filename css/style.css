@@ -13,9 +13,10 @@ body {
   font-family: 'lato', sans-serif;
   background-color: #314555;
   color: #fff;
+  width: 90%;
+  margin: 0 auto;
 }
 section{
-  width:  90%;
   margin: 0 0 40px 0;
 }
 /* Type will scale with document */

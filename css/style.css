@@ -73,7 +73,37 @@ nav h1:hover{
 #navigation a:hover {
     color: grey;
 }
+#menu-top-nav li {
+        float: left;
+        position: relative;
+}
 
+#menu-top-nav li a {
+        color: #FFF;
+        padding: 0 4px;
+}
+
+/* Desktop */
+@media screen and (min-width: 360px) {
+    #menu-top-nav {
+        color: #fff;
+        font-size: 14px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+
+    }
+}
+/* Medium */
+@media screen and (max-width: 360px) {
+    #menu-top-nav {
+        color: #fff;
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+}
 
 /* grid */
 /* Thanks to Nick Salloum from Sitepoint */

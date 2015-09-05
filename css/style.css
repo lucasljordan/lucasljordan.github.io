@@ -150,3 +150,24 @@ nav h1:hover{
     border-bottom: 1px solid #151515;
     border-top: 1px solid #151515;
 }
+.footer{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+.social{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.footer-icon{
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 17px;
+    font-size: 20px;
+    margin: 10px;
+}
+.footer-icon  a:hover {
+    color: grey;
+}

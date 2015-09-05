@@ -14,6 +14,10 @@ body {
   background-color: #314555;
   color: #fff;
 }
+section{
+  width:  90%;
+  margin: 0 auto;
+}
 /* Type will scale with document */
 h1 {
   font-size: 2rem;

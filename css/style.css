@@ -169,6 +169,54 @@ nav h1:hover{
     border-bottom: 1px solid #151515;
     border-top: 1px solid #151515;
 }
+.contact{
+    width: 90%;
+}
+.form-control{
+    width: 100%;
+    margin: 5px;
+    line-height: 20px;
+    color: #000;
+}
+.form-submit{
+    background-color: #00c4b2;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px;
+}
+.contact-details{
+    color: #00c4b2;
+    font-weight: 600;
+}
+.service span{
+    top: 0px;
+}
+.service h2{
+    display: inline-block;
+    color: #00c4b2;
+    margin-left: 20px;
+}
+.service p{
+    margin-left: 80px;
+}
+.unset{
+    width:100%;
+    float: left;
+}
+.details{
+    margin-left: 20px;
+}
+.details p{
+    margin-left: 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.details ul{
+    list-style: initial;
+    margin-left: 20px;
+}
 .footer{
   width: 90%;
   margin: 0 auto;

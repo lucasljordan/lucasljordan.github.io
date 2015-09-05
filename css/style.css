@@ -36,11 +36,43 @@ h3 {
   font-family: georgia;
 }
 a { color: #fff; }
+nav{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
 nav h1{
   font-size: 1rem;
   color: #00c4b2;
   font-family: georgia;
+  position: absolute;
+  top: 10px;
 }
+nav h1:hover{
+    cursor: pointer;
+}
+/*FIXED NAV*/
+#navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #ffffff;
+    height: 35px;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+}
+#navigation h1{
+    color: #00c4b2;
+    top: 10px;
+    font-family: georgia;
+}
+
+#navigation a:hover {
+    color: grey;
+}
+
+
 /* grid */
 /* Thanks to Nick Salloum from Sitepoint */
 /* http://www.sitepoint.com/easy-responsive-css-grid-layouts */
@@ -75,4 +107,13 @@ nav h1{
     clear: none;
   }
 
+}
+
+.dark {
+    background: -webkit-linear-gradient(#424242, #2E2E2E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#424242, #2E2E2E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#424242, #2E2E2E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#424242, #2E2E2E); /* Standard syntax (must be last) */
+    border-bottom: 1px solid #151515;
+    border-top: 1px solid #151515;
 }

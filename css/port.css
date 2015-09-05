@@ -374,7 +374,8 @@ nav h1:hover{
     background: -moz-linear-gradient(#424242, #2E2E2E); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#424242, #2E2E2E); /* Standard syntax (must be last) */
     border-bottom: 1px solid #151515;
-    border-top: 1px solid #151515;}
+    border-top: 1px solid #151515;
+}
 
 #footer {
     position:fixed;

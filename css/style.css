@@ -251,13 +251,13 @@ nav h1:hover{
     -moz-box-shadow: 0px -1px 12px 0px rgba(0,0,0,0.75);
     box-shadow: 0px -1px 12px 0px rgba(0,0,0,0.75);
 }
-.footer-icon{
+.icon{
     padding: 5px;
     border: 2px solid;
     border-radius: 17px;
     font-size: 20px;
     margin: 10px;
 }
-.footer-icon  a:hover {
+.icon  a:hover {
     color: grey;
 }

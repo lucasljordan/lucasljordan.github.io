@@ -228,6 +228,9 @@ nav h1:hover{
     border-bottom: 1px solid #151515;
     border-top: 1px solid #151515;
 }
+.headline-section{
+  padding-top: 60px;
+}
 .contact{
     width: 90%;
 }

@@ -40,6 +40,9 @@ main{
 section{
   margin: 0 0 40px 0;
 }
+section:last-of-type {
+  margin-bottom: 100px;
+}
 /* Type will scale with document */
 h1 {
   font-size: 2rem;

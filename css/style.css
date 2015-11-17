@@ -286,7 +286,7 @@ form{
     margin-left: 20px;
 }
 
-.btn-contact{
+.btn-primary{
   background-color: #00c4b2;
   color: #fff;
   border: none;
@@ -294,6 +294,11 @@ form{
   border-radius: 4px;
   margin: 5px;
   text-decoration: none;
+}
+.casestudy-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 .icon{
     padding: 5px;

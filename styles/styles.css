@@ -27,6 +27,7 @@ nav > h1 {
  float: left;
  font-size: 0.7em;
  line-height: 8px;
+ cursor: pointer;
 }
 nav > ul {
    list-style-type: none;

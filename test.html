@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Lucas L Jordan</title>
+  <meta name="description" content="Looking for a Melbourne Web Designer? Portfolio of Lucas L Jordan. Melbourne based web developer & designer">
+  <meta name="keywords" content="Web Design Melbourne, web design Northcote, Melbourne Developer, developer, Melbourne Web Developer, Lucas, Jordan, Lucas L Jordan, Lucas Jordan, contact Lucas Jordan, Web support, Melbourne, Portfolio, Search engine optimisation, SEO, Digital Marketing, Social Media Marketing">
+  <meta name="author" content="Lucas L Jordan">
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:site_name" content="Lucas L Jordan"/>
+  <meta property="og:url" content="https://lucasljordan.github.io/"/>
+  <meta property="og:title" content="Home" />
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Looking for a Melbourne Web Designer? Portfolio of Lucas L Jordan. Melbourne based web developer & designer" />
+  <meta property="og:image" content="https://lucasljordan.github.io/images/lucasljordan.io.jpeg"/>
+
+  <!-- google + -->
+  <meta itemprop="name" content="Home">
+  <meta itemprop="description" content="Looking for a Melbourne Web Designer? Portfolio of Lucas L Jordan. Melbourne based web developer & designer">
+  <meta itemprop="image" content="https://lucasljordan.github,io/images/New Lucas.jpg">
+
+  <!--[if lt IE 9]>
+    <script src="/scripts/html5shiv.min.js"></script>
+    <script src="/scripts/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="styles/normalize.css" type="text/css"/>
+  <link rel="stylesheet" href="styles/global.css" type="text/css"/>
+  <link rel="stylesheet" href="styles/themify-icons.css" type="text/css">
+  <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+</head>
+<body>
+<header id="home">
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services" class="scroll-link" data-id="services">Services</a></li>
+      <!--<li><a href="#">Creations</a></li>-->
+      <li><a href="#contact" class="scroll-link" data-id="contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main role="main">
+  <section id="about">
+    <h2>A little about me</h2>
+    <p>
+      Hi I'm Lucas an enthusiastic web developer with 3 years experience. I am currently doing a full time gig as a Front End Developer at Rare.
+    </p>
+    <p>
+      I spend my spare time volunteering for <a href="http://www.seashepherd.org.au/" target="_blank">Sea Shepherd</a> and <a href="https://soundcloud.com/lucasljordan" target="_blank">writing music.</a>
+    </p>
+    <a href="/about.html">Read more.</a>
+  </section>
+  <section id="services">
+    <h2>What I do</h2>
+    <ul>
+      <li>Content Strategy</li>
+      <li>Web Design</li>
+      <li>Mobile-Friendly (Responsive Web Design)</li>
+      <li>Web Development</li>
+    </ul>
+    <ul>
+      <li>Content Management Systems (CMS)</li>
+      <li>eCommerce</li>
+      <li>Search Engine Optimisation (SEO)</li>
+      <li>Social Media Integration</li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2>Drop me a line</h2>
+    <form action="//formspree.io/lucasl.jordan@gmail.com" method="POST" class="row">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="your name"/>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="your email"/>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="your message" rows="4"></textarea>
+      <input type="hidden" name="_next" value="https://lucasljordan.github.io/thanks.html" />
+      <input type="hidden" name="_subject" value="New Contact Request:" />
+      <input type="text" name="_gotcha" style="display:none" />
+      <input class="btn" type="submit" value="Send">
+    </form>
+  </section>
+</main>
+<footer>
+     <ul>
+         <li><a href="https://www.linkedin.com/in/lucasljordan" target="_blank" title="Linkedin"><span class="ti-linkedin icon"></span></a></li>
+         <li><a href="mailto:LucasL.Jordan@gmail.com?Subject=Contact%20request%20from%20LucasLJordan.github.io" target="_top" title="Email me"><span class="ti-email icon"></span></a></li>
+         <li><a href="https://twitter.com/Lucas_L_Jordan" target="_blank" title="Twitter"><span class="ti-twitter icon"></span></a></li>
+         <li><a href="#" target="_blank" title="Github"><span class="ti-github"></span></a></li>
+     </ul>
+ </footer>
+<!-- include extern jQuery file but fall back to local file if extern one fails to load !-->
+ <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+ <script type="text/javascript">window.jQuery || document.write('<script type="text\/javascript" src="js\/1.7.2.jquery.min"><\/script>')</script>
+ <script type="text/javascript">
+     $("#menu-top-header").click(function() {
+         var uri = window.location.pathname.substr(1);
+         if(uri == 'index.html'){
+             $("#home-link").click();
+         }
+         else{window.location.href = "/index.html";
+             return false;}
+
+     });
+     $(document).ready(function() {
+         // navigation click actions
+         $('.scroll-link').on('click', function(event){
+             event.preventDefault();
+             var sectionID = $(this).attr("data-id");
+             scrollToID('#' + sectionID, 750);
+         });
+         // scroll to top action
+         $('.scroll-top').on('click', function(event) {
+             event.preventDefault();
+             $('html, body').animate({scrollTop:0}, 'slow');
+         });
+         // navigate to home button
+         $('#nav-brand').on('click', function(event){
+             event.preventDefault();
+             window.location.href = '/index.html';
+         });
+     });
+     // scroll function
+     function scrollToID(id, speed){
+         var offSet = 50;
+         var targetOffset = $(id).offset().top - offSet;
+         var mainNav = $('#main-nav');
+         $('html,body').animate({scrollTop:targetOffset}, speed);
+         if (mainNav.hasClass("open")) {
+             mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+             mainNav.removeClass("open");
+         }
+     }
+ </script>
+
+ <!-- Google Analytics   -->
+ <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-59228669-1', 'auto');
+     ga('send', 'pageview');
+
+ </script>
+</body>
+</html>

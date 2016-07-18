@@ -1,3 +1,25 @@
+nav{
+  position: absolute;
+  display: block;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+nav ul{
+  position: relative;
+  display: inline-block;
+  margin: auto 0;
+  list-style-type: none;
+}
+nav ul li{
+  padding: 10px 15px;
+}
+nav ul li a{
+  text-decoration: none;
+}
 section{
   padding: 30px 0;
 }
@@ -19,3 +41,11 @@ ul li{
 ul li a{
   text-decoration: none;
 }
+/*
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+*/

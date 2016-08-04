@@ -1,7 +1,30 @@
+/* RESET */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 html{
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     font-size: 14px;
+}
+.container{
+  width: 20.714285714285715em;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
 }
 label {
     display: inline-block;
@@ -76,11 +99,3 @@ p{
   font-size: 14px;
   font-size: 1em;
 }
-/*
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-*/

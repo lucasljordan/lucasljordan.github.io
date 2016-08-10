@@ -48,24 +48,30 @@ textarea{
 nav{
   position: absolute;
   display: block;
-  right: 0;
-  left: 0;
   bottom: 0;
-  margin-bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+}
+nav div{
+  position: relative;
+  display: block;
   text-align: center;
 }
 nav ul{
   position: relative;
-  display: inline-block;
-  margin: auto 0;
+  display: block;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 nav ul li{
-  padding: 10px 15px;
+  display: inline;
 }
 nav ul li a{
   text-decoration: none;
+  text-align: center
 }
 section{
   padding: 30px 0;

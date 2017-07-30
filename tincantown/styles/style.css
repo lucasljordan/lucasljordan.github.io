@@ -134,6 +134,8 @@ textarea{
 header {
   display: block;
   position: relative;
+  background-color: #00bbf2;
+  color: #fefefe;
 }
 nav{
   position: relative;
@@ -156,9 +158,15 @@ nav ul{
 nav ul li{
   display: inline-block;
 }
-nav ul li a{
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
   text-decoration: none;
-  text-align: center
+  text-align: center;
+  color: #fefefe;
 }
 main {
   display: block;

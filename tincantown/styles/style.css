@@ -28,44 +28,95 @@
   # Fonts
 --------------------------------------------------------------*/
 
+
 /* montserrat-300 - latin */
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/montserrat-v10-latin-300.eot'); /* IE9 Compat Modes */
-  src: local('Montserrat Light'), local('Montserrat-Light'),
-       url('../fonts/montserrat-v10-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/montserrat-v10-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v10-latin-300.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/montserrat-v10-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/montserrat-v10-latin-300.svg#Montserrat') format('svg'); /* Legacy iOS */
+  src: url('../fonts/montserrat-v10-latin-300.eot');
+  /* IE9 Compat Modes */
+  src: local('Montserrat Light'), local('Montserrat-Light'), url('../fonts/montserrat-v10-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/montserrat-v10-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/montserrat-v10-latin-300.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/montserrat-v10-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/montserrat-v10-latin-300.svg#Montserrat') format('svg');
+  /* Legacy iOS */
 }
+
+
 /* montserrat-regular - latin */
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/montserrat-v10-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('../fonts/montserrat-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/montserrat-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/montserrat-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/montserrat-v10-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  src: url('../fonts/montserrat-v10-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url('../fonts/montserrat-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/montserrat-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/montserrat-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/montserrat-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/montserrat-v10-latin-regular.svg#Montserrat') format('svg');
+  /* Legacy iOS */
 }
+
+
 /* montserrat-700 - latin */
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/montserrat-v10-latin-700.eot'); /* IE9 Compat Modes */
-  src: local('Montserrat Bold'), local('Montserrat-Bold'),
-       url('../fonts/montserrat-v10-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/montserrat-v10-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v10-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/montserrat-v10-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/montserrat-v10-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+  src: url('../fonts/montserrat-v10-latin-700.eot');
+  /* IE9 Compat Modes */
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat-v10-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/montserrat-v10-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/montserrat-v10-latin-700.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/montserrat-v10-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/montserrat-v10-latin-700.svg#Montserrat') format('svg');
+  /* Legacy iOS */
+}
+
+
+/*--------------------------------------------------------------
+#   Grid - For devices larger than 550px
+--------------------------------------------------------------*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 550px) {
+
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+
 }
 
 /*--------------------------------------------------------------
@@ -73,115 +124,140 @@
 --------------------------------------------------------------*
 
 /* RESET */
-*,
-*:before,
-*:after {
+
+*, *:before, *:after {
   box-sizing: border-box;
 }
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-html{
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    background-color: #fefefe;
-    color: #333333;
-    line-height: 1.6em;
+
+html {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #fefefe;
+  color: #333333;
+  line-height: 1.6em;
 }
+
+html, body {
+  height: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #1E1E1E;
 }
-.container{
+
+.container {
   width: 18.000em;
   padding-right: 1em;
   padding-left: 1em;
   margin: 0 auto;
 }
-.column,
-.columns {
+
+.column, .columns {
   width: 100%;
   float: left;
   box-sizing: border-box;
 }
+
 @media (min-width: 42.500em) {
-  .container{
+  .container {
     width: 40.500em;
   }
 }
-@media (min-width: 64em) { /* 1024px*/
-  .container{
+
+@media (min-width: 64em) {
+  /* 1024px*/
+  .container {
     width: 54em;
   }
 }
-@media (min-width: 85.375em ) { /* 1366px */
-  .container{
+
+@media (min-width: 85.375em) {
+  /* 1366px */
+  .container {
     width: 54em;
   }
 }
+
 label {
-    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
 }
+
 input, textarea {
-    display: block;
-    border-radius: 4px;
-    min-height: 46px;
-    padding: 10px 16px;
-    line-height: 1.3333333;
-    width: 100%;
-    color: #666;
-    border: 1px solid #ccc;
-    margin-bottom: 5px;
+  display: block;
+  border-radius: 4px;
+  min-height: 46px;
+  padding: 10px 16px;
+  line-height: 1.3333333;
+  width: 100%;
+  color: #666;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
 }
-textarea{
+
+textarea {
   min-height: 121px;
 }
-header {
+
+.header {
   display: block;
   position: relative;
   background-color: #ffffff;
   color: #fefefe;
 }
-header .brand-logo {
+
+.header .brand-logo {
   display: block;
   position: relative;
   padding: 0;
   margin: 0;
 }
-nav{
+
+nav {
   position: relative;
   display: block;
   margin: 0 auto;
   padding: 0;
 }
+
 nav {
   background-color: #00bbf2;
 }
-nav div{
+
+nav div {
   position: relative;
   display: block;
 }
-nav ul{
+
+nav ul {
   position: relative;
   display: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 nav ul[data-expanded="true"] {
   display: block;
 }
+
 nav ul[data-expanded="false"] {
   display: none;
 }
+
 nav ul li {
   display: block;
   text-align: center;
 }
+
 .responsive-menu {
   display: block;
   position: relative;
@@ -190,6 +266,7 @@ nav ul li {
   height: 1.2333em;
   cursor: pointer;
 }
+
 .responsive-menu:before {
   content: "";
   position: absolute;
@@ -200,14 +277,13 @@ nav ul li {
   border-top: 0.399em double #ffffff;
   border-bottom: 0.125em solid #ffffff;
 }
-@media (min-width: 64em ) { /* 1366px */
+
+@media (min-width: 64em) {
+  /* 1366px */
   .responsive-menu {
     display: none;
   }
-
-  nav ul,
-  nav ul[data-expanded="false"],
-  nav ul[data-expanded="true"] {
+  nav ul, nav ul[data-expanded="false"], nav ul[data-expanded="true"] {
     position: relative;
     display: block;
   }
@@ -216,59 +292,62 @@ nav ul li {
     text-align: left;
   }
 }
-nav ul li a,
-nav ul li a:link,
-nav ul li a:visited {
+
+nav ul li a, nav ul li a:link, nav ul li a:visited {
   text-decoration: none;
   text-align: center;
   color: #fefefe;
 }
-nav ul li a:hover,
-nav ul li a:focus,
-nav ul li a:active {
+
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   color: #d0d0d0;
 }
+
 main {
   display: block;
   position: relative;
   margin: 0;
   padding: 0 0 2em 0;
+  min-height: calc(100vh - 247px);
 }
+
 main ul {
   list-style: none;
   padding-left: 0;
 }
-section{
+
+section {
   padding: 30px 0;
 }
-ul{
+
+ul {
   text-decoration: none;
 }
-ul li{
+
+ul li {
   list-style-type: none;
   margin: 5px
 }
-ul li a,
-ul li a:link,
-ul li a:visited{
+
+ul li a, ul li a:link, ul li a:visited {
   font-size: 14px;
   font-size: 1em;
   text-decoration: none;
 }
-ul li a:hover,
-ul li a:focus,
-ul li a:active {
 
-}
-h2{
+ul li a:hover, ul li a:focus, ul li a:active {}
+
+h2 {
   text-decoration: underline;
   font-size: 16.8px;
   font-size: 1.2em;
 }
 
+
 /*--------------------------------------------------------------
 #   Footer styles
 --------------------------------------------------------------*/
+
 footer {
   background-color: #00bbf2;
   color: #fefefe;
@@ -276,17 +355,16 @@ footer {
   margin: 0;
   padding: 0.8em 0;
 }
-footer a,
-footer a:link,
-footer a:visited {
+
+footer a, footer a:link, footer a:visited {
   color: #fefefe;
   text-decoration: none;
 }
-footer a:hover,
-footer a:focus,
-footer a:active {
+
+footer a:hover, footer a:focus, footer a:active {
   text-decoration: underline;
 }
+
 footer .icon {
   color: #FF3E55;
 }

@@ -27,28 +27,58 @@
     <script src="/scripts/respond.min.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" href="styles/normalize.css" type="text/css"/>
-  <link rel="stylesheet" href="styles/themify-icons.css" type="text/css">
-  <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+  <link rel="stylesheet" href="./styles/normalize.css" type="text/css"/>
+  <link rel="stylesheet" href="./styles/themify-icons.css" type="text/css">
+  <link rel="stylesheet" href="./styles/style.css" type="text/css"/>
 </head>
 <body>
-<header id="home">
-  <nav class="container">
-      <ul>
+<div class="header">
+  <div class="container brand-icon">
+    <img src="./images/brand-logo.jpg" alt"Tin Can Town Inc"/>
+  </div>
+  <nav>
+    <div class="container">
+      <div class="responsive-menu"></div>
+      <ul data-expanded="false">
         <li><a href="/tincantown/index.html">Home</a></li>
         <li><a href="/tincantown/meet-the-team.html">Meet The Team</a></li>
         <li><a href="/tincantown/donate.html">Donate</a></li>
-        <li><a href="/tincantown/photos.html">Photos</a></li>
+        <!--<li><a href="/tincantown/photos.html">Photos</a></li>-->
         <li><a href="/tincantown/contact.html">Contact</a></li>
       </ul>
+    </div>
   </nav>
-</header>
+</div>
 <main role="main" class="container">
+
+  <h1>Contact:</h1>
+  <p>
+    <strong>PLEASE NOTE:</strong> Our small is very busy but we will endeavour to respond to your email in a timely manner.
+  </p>
+
+  <form action="//formspree.io/lucasl.jordan@gmail.com" method="POST" class="row">
+    <label for="name">Name:</label>
+    <input class="form-control" type="text" name="name" id="name" placeholder="Your name"><br>
+    <label for="_replyto">Email:</label>
+    <input class="form-control" type="text" name="_replyto" id="_replyto" placeholder="Your email" /><br>
+    <label for="message">Mesage:</label>
+    <textarea class="form-control" name="message" id="message" rows="4" placeholder="Your message"></textarea><br>
+    <input type="hidden" name="_next" value="https://lucasljordan.github.io/thanks.html" />
+    <input type="hidden" name="_subject" value="New Contact Request:" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <input class="btn" type="submit" value="Send">
+ </form>
+
 </main>
-<footer role="footer" class="container">
-  &copy; Tin Can Town - <script>document.write(new Date().getFullYear())</script> | Made with <span class="ti-heart icon"></span>  by <a href="http://frontendwarrior.com/" target="_blank" >Lucas Jordan</a>
+<footer role="footer">
+  <div class="container">
+    &copy; Tin Can Town - <script>document.write(new Date().getFullYear())</script> |
+    Made with <span class="ti-heart icon"></span>
+    by <a href="http://frontendwarrior.com/" target="_blank" >Lucas Jordan</a>
+  </div>
 </footer>
- <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./scripts/script.js"></script>
 
 <!-- Google Analytics   -->
 <script>

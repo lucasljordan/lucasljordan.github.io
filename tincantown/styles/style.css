@@ -185,6 +185,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: #00bbf2;
+}
+
 label {
   display: inline-block;
   max-width: 100%;
@@ -283,7 +293,8 @@ nav ul li {
   .responsive-menu {
     display: none;
   }
-  nav ul, nav ul[data-expanded="false"], nav ul[data-expanded="true"] {
+  nav ul, nav ul[data-expanded="false"],
+  nav ul[data-expanded="true"] {
     position: relative;
     display: block;
   }
@@ -293,13 +304,17 @@ nav ul li {
   }
 }
 
-nav ul li a, nav ul li a:link, nav ul li a:visited {
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited {
   text-decoration: none;
   text-align: center;
   color: #fefefe;
 }
 
-nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
   color: #d0d0d0;
 }
 

@@ -1,7 +1,5 @@
 $(document).ready( function(){
 
-  console.log("HERE");
-
   $(".responsive-menu").on("click touchstart", function( event ){
 
     var $nav = $(this).closest("nav").find("ul");

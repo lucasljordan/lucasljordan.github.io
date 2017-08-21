@@ -31,6 +31,8 @@
   <link rel="stylesheet" href="./styles/normalize.css" type="text/css" />
   <link rel="stylesheet" href="./styles/themify-icons.css" type="text/css">
   <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+  <script src="https://js.braintreegateway.com/web/dropin/1.6.1/js/dropin.min.js"></script>
+  
 </head>
 
 <body>
@@ -79,6 +81,23 @@
     </div>
   </footer>
   <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+
+  <!-- Braintree Javascript SDK -->
+  <script>
+    var button = document.querySelector('#submit-button');
+
+    braintree.dropin.create({
+      authorization: 'CLIENT_TOKEN_FROM_SERVER',
+      container: '#dropin-container'
+    }, function (createErr, instance) {
+      button.addEventListener('click', function () {
+        instance.requestPaymentMethod(function (err, payload) {
+          // Submit payload.nonce to your server
+        });
+      });
+    });
+  </script>
+  <!-- End of Braintree Javascript SDS -->
 
   <!-- Google Analytics   -->
   <script>

@@ -90,7 +90,7 @@
     var button = document.querySelector('#submit-button');
 
     braintree.dropin.create({
-      authorization: 'CLIENT_TOKEN_FROM_SERVER',
+      authorization: 'access_token$sandbox$f89csqkvzz6fnf35$27080c4e3f48c048657a9765b09868f2',
       container: '#dropin-container'
     }, function (createErr, instance) {
       button.addEventListener('click', function () {

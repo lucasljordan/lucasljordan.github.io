@@ -86,20 +86,6 @@
   <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
 
   <!-- Braintree Javascript SDK -->
-  <script>
-    var button = document.querySelector('#submit-button');
-
-    braintree.dropin.create({
-      authorization: 'access_token$sandbox$f89csqkvzz6fnf35$27080c4e3f48c048657a9765b09868f2',
-      container: '#dropin-container'
-    }, function (createErr, instance) {
-      button.addEventListener('click', function () {
-        instance.requestPaymentMethod(function (err, payload) {
-          // Submit payload.nonce to your server
-        });
-      });
-    });
-  </script>
   <!-- End of Braintree Javascript SDS -->
 
   <!-- Google Analytics   -->

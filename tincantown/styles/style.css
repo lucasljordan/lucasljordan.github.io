@@ -318,6 +318,17 @@ nav ul li a:active {
   color: #d0d0d0;
 }
 
+.btn.nav-btn {
+  border: solid 2px #fefefe;
+  color: #fefefe;
+  border-radius: 6px;
+  padding: 0.2em 0.2em;
+  font-weight: 700;
+}
+.btn.nav-btn:hover {
+  border: solid 2px #ffffff;
+  color: #ffffff;
+}
 main {
   display: block;
   position: relative;
@@ -329,6 +340,7 @@ main {
 main ul {
   list-style: none;
   padding-left: 0;
+  margin-left:  -9px;
 }
 
 section {
@@ -341,7 +353,7 @@ ul {
 
 ul li {
   list-style-type: none;
-  margin: 5px
+  margin: 10px
 }
 
 ul li a, ul li a:link, ul li a:visited {

@@ -88,7 +88,7 @@
   display: table;
   clear: both;
 }
-@media (min-width: 550px) {
+@media (min-width: 768px) {
 
   .column,
   .columns {

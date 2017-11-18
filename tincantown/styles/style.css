@@ -257,6 +257,7 @@ nav ul {
 
 nav ul[data-expanded="true"] {
   display: block;
+  padding-bottom: 10px;
 }
 
 nav ul[data-expanded="false"] {
@@ -297,6 +298,7 @@ nav ul li {
   nav ul[data-expanded="true"] {
     position: relative;
     display: block;
+    padding-bottom: 10px;
   }
   nav ul li {
     display: inline-block;

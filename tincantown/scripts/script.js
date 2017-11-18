@@ -1,6 +1,6 @@
 $(document).ready( function(){
 
-  $(".responsive-menu").on("click touchstart", function( event ){
+  $(".responsive-menu").on("click", function( event ){
 
     var $nav = $(this).closest("nav").find("ul");
     if ( $nav.attr("data-expanded") == "false"  ) {

@@ -1,0 +1,82 @@
+/*
+  Theme Name: IE Digital: Code-Challenge-1
+  Author: Lucas Jordan
+  Description: Git hub code challenge from IE Digital - Styles
+  Version: 0.0.1
+  Copyright: Lucas Jordan
+*/
+
+/*-----------------------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+-------------------------------------------------------------------------------
+#   Reset
+#   Include fonts
+#   Global ctyles
+#   Core styles
+#   Utility classes
+-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------
+#   Reset
+-----------------------------------------------------------------------------*/
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+*:focus {
+    outline: 0px;
+}
+
+
+/*-----------------------------------------------------------------------------
+#   Include fonts
+-----------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+
+/*-----------------------------------------------------------------------------
+#   Global styles
+-----------------------------------------------------------------------------*/
+body {
+    font-family: 'Lato', "Helvetica Neue", Helvetica,Roboto,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.44;
+    color: #333;
+}
+footer {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: 0.6em 0;
+}
+
+/*-----------------------------------------------------------------------------
+#   Core styles
+-----------------------------------------------------------------------------*/
+.container {
+    display: block;
+    position:relative;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+}
+header h1 {
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 2em 0;
+}
+label {
+    display: block;
+}
+/*-----------------------------------------------------------------------------
+#   Utility classes
+-----------------------------------------------------------------------------*/

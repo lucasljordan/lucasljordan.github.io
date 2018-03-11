@@ -18,50 +18,50 @@
 </head>
 
 <body>
-  <main role="main" class="container">
+  <main role="main" class="container" id="app">
 
     <header role="header">
       <h1>IE Digital Code-Challenge-1: Pacman Simulator</h1>
     </header>
 
-    <p>
+    <p class="description">
       TODO Description
     </p>
-
-    <form>
-        <label for="commands">Commands:</label>
-        <textarea id="commands" rows="8"></textarea>
-
-    </form>
-
-    <div class="grid-container">
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
-      <item data-coordinates="0,0"></item>
+    <div>
+      <label for="commands">Commands:</label>
+      <textarea id="commands" v-model.lazy="commands"  rows="8"></textarea>
+      <button v-on:click="captureCommands">Submit Commands</button>
     </div>
-
+    <p>{{ commands }}</p>
+    <div class="game-wrapper">
+      <div class="grid-container">
+        <div class="item" data-coordinates="0,4"></div>
+        <div class="item" data-coordinates="1,4"></div>
+        <div class="item" data-coordinates="2,4"></div>
+        <div class="item" data-coordinates="3,4"></div>
+        <div class="item" data-coordinates="4,4"></div>
+        <div class="item" data-coordinates="0,3"></div>
+        <div class="item" data-coordinates="1,3"></div>
+        <div class="item" data-coordinates="2,3"></div>
+        <div class="item" data-coordinates="3,3"></div>
+        <div class="item" data-coordinates="4,3"></div>
+        <div class="item" data-coordinates="0,2"></div>
+        <div class="item" data-coordinates="1,2"></div>
+        <div class="item" data-coordinates="2,2"></div>
+        <div class="item" data-coordinates="3,2"></div>
+        <div class="item" data-coordinates="4,2"></div>
+        <div class="item" data-coordinates="0,1"></div>
+        <div class="item" data-coordinates="1,1"></div>
+        <div class="item" data-coordinates="2,1"></div>
+        <div class="item" data-coordinates="3,1"></div>
+        <div class="item" data-coordinates="4,1"></div>
+        <div class="item" data-coordinates="0,0"></div>
+        <div class="item" data-coordinates="1,0"></div>
+        <div class="item" data-coordinates="2,0"></div>
+        <div class="item" data-coordinates="3,0"></div>
+        <div class="item" data-coordinates="4,0"></div>
+      </div>
+    </div>
   </main>
   <footer role="footer">
     &copy Lucas Jordan <span id="date"></span>

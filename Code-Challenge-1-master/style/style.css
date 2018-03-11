@@ -48,17 +48,25 @@ body {
 }
 footer {
     display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: relative;
     text-align: center;
     margin: 0.6em 0;
 }
-
+img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
 /*-----------------------------------------------------------------------------
 #   Core styles
 -----------------------------------------------------------------------------*/
+main {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
 .container {
     display: block;
     position:relative;
@@ -66,6 +74,7 @@ footer {
     margin: 0 auto;
 }
 header {
+    display: block;
     text-align: center;
 }
 header h1 {
@@ -74,8 +83,169 @@ header h1 {
     line-height: 1.2;
     margin: 2em 0;
 }
-label {
+.description {
     display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+form {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+}
+form  label {
+    display: block;
+    font-weight: 700;
+}
+form textarea {
+    display: block;
+    position: relative;
+    width: 60%;
+}
+button {
+    display: inline-block;
+    position: relative;
+    background-color: #3F91F4;
+    color: #ffffff;
+    padding: 0.5em 1.5em;
+    margin: 0.2em 0;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Lato', "Helvetica Neue", Helvetica,Roboto,Arial,sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.2;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+button:hover,
+button:active,
+button:focus {
+    background-color: #367BD1;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+/*-----------------------------------------------------------------------------
+#   Game grid styles
+-----------------------------------------------------------------------------*/
+.game-wrapper {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.grid-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+.grid-container .item {
+    position: relative;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 19%;
+    -ms-flex: 1 1 19%;
+    flex: 1 1 19%;
+    -webkit-align-self: auto;
+    -ms-flex-item-align-self: auto;
+    min-height: 218px;
+    border: solid 1px #333333;
+    border-left: none;
+    border-bottom: none;
+}
+.grid-container .item:first-of-type {
+    border: solid 1px #333333;
+    border-bottom: none;
+}
+.grid-container .item:nth-of-type(5n + 1) {
+    border-left: solid 1px #333333;
+}
+.grid-container .item:nth-of-type(21n),
+.grid-container .item:nth-of-type(22n),
+.grid-container .item:nth-of-type(23n),
+.grid-container .item:nth-of-type(24n),
+.grid-container .item:nth-of-type(25n) {
+    border-bottom: solid 1px #333333;
+}
+/*-----------------------------------------------------------------------------
+#   Pacman styles
+-----------------------------------------------------------------------------*/
+.pac-man {
+    display: block;
+    position: relative;
+    transform-origin: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    width: 95%;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.pac-man[data-face="north"] {
+    -ms-transform:  rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.pac-man[data-face="east"] {
+    -ms-transform:  rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.pac-man[data-face="south"] {
+    -ms-transform:  rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.pac-man[data-face="west"] {
+    -ms-transform:  rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 /*-----------------------------------------------------------------------------
 #   Utility classes

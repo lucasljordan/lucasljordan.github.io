@@ -9,10 +9,25 @@
 /*-----------------------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 -------------------------------------------------------------------------------
-#   Reset
+#   Update footer date
 -----------------------------------------------------------------------------*/
 
+//<img class="pac-man" data-face="north" src="./image/Pacman.svg"/>
+
+new Vue({
+  el: '#app',
+  data: {
+    commands: ''
+  },
+  methods: {
+      captureCommands: function() {
+        alert( this.commands ) 
+      }
+  }
+})
 
 /*-----------------------------------------------------------------------------
-#   Reset
+#   Update footer date
 -----------------------------------------------------------------------------*/
+var date = new Date();
+document.getElementById("date").innerHTML = date.getFullYear();

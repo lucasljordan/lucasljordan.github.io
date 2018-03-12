@@ -89,17 +89,17 @@ header h1 {
     margin: 0;
     padding: 0;
 }
-form {
+.control-block {
     display: block;
     position: relative;
     padding: 0;
     margin: 0 auto;
 }
-form  label {
+.control-block label {
     display: block;
     font-weight: 700;
 }
-form textarea {
+.control-block textarea {
     display: block;
     position: relative;
     width: 60%;

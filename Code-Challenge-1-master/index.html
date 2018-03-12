@@ -1,50 +1,75 @@
 
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>IE Digital Code-Challenge-1: Pacman Simulator</title>
-  <meta name="description" content="Creating a better environment within South African informal settlements for animals and their owners.">
-  <meta name="keywords" content="">
-  <meta name="author" content="Lucas Jordan">
-  <meta name="application-name" content="IE Digital Code-Challenge-1: Pacman Simulator" />
-  <meta name="theme-color" content="#333333">
-
-  <link rel="stylesheet" href="./style/normalize.css" type="text/css" />
-  <link rel="stylesheet" href="./style/style.css" type="text/css" />
-</head>
-
-<body>
-  <main role="main" class="container" id="app">
-
-    <header role="header">
-      <h1>IE Digital Code-Challenge-1: Pacman Simulator</h1>
-    </header>
-
-    <p class="description">
-      TODO Description
-    </p>
-    <div class="control-block">
-      <label for="commands">Commands:</label>
-      <textarea id="commands" v-model.lazy="commands"  rows="8"></textarea>
-      <button v-on:click="captureCommands">Submit Commands</button>
-    </div>
-    <div class="game-wrapper">
-      <div class="grid-container">
-        <div class="item" v-for="grid in grid_items" :data-coordinates="grid">
-            <span v-if="grid[0]===0 && grid[1]===0" v-html="pacman"></span>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer role="footer">
-    &copy; Lucas Jordan <span id="date"></span>
-  </footer>
-  <script type="text/javascript" src="./script/vue.min.js"></script>
-  <script type="text/javascript" src="./script/script.js"></script>
-</body>
-
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <title>IE Digital Code-Challenge-1: Pacman Simulator</title>
+      <meta name="description" content="Creating a better environment within South African informal settlements for animals and their owners.">
+      <meta name="keywords" content="">
+      <meta name="author" content="Lucas Jordan">
+      <meta name="application-name" content="IE Digital Code-Challenge-1: Pacman Simulator" />
+      <meta name="theme-color" content="#333333">
+      <link rel="stylesheet" href="./style/normalize.css" type="text/css" />
+      <link rel="stylesheet" href="./style/style.css" type="text/css" />
+    </head>
+    <body>
+      <main role="main" class="container" id="app">
+          <header role="header">
+              <h1>IE Digital Code-Challenge-1: Pacman Simulator</h1>
+          </header>
+          <div class="description">
+              <p>
+                  The application is a simulation of Pacman moving on in a grid, of dimensions 5 units x 5 units.
+                  There are no other obstructions on the grid.
+                  Pacman is free to roam around the surface of the grid, but must be prevented from moving off the grid. Any movement that would result in Pacman moving off the grid must be prevented, however further valid movement commands must still be allowed.
+                  Create an application that can read in commands of the following form -
+              </p>
+              <p>
+                  PLACE X,Y,F
+              </p>
+              <p>
+                  MOVE
+              </p>
+              <p>
+                  LEFT
+              </p>
+              <p>
+                  RIGHT
+              </p>
+              <p>
+                  REPORT
+              </p>
+              <p>
+                  PLACE will put the Pacman on the grid in positon X,Y and facing NORTH,SOUTH, EAST or WEST.
+                  The origin (0,0) can be considered the SOUTH WEST most corner.
+              </p>
+              <p>
+                  MOVE will move Pacman one unit forward in the direction it is currently facing.
+              </p>
+              <p>
+                  LEFT and RIGHT will rotate Pacman 90 degrees in the specified direction without changing the position of Pacman.
+              </p>
+              <p>
+                  REPORT will announce the X,Y and F of Pacman.
+              </p>
+          </div>
+          <div>
+              <div class="control-block">
+                  <label for="commands">Commands:</label>
+                  <textarea id="commands" v-model.lazy="commands"  rows="8"></textarea>
+                  <button v-on:click="captureCommands">Submit Commands</button>
+              </div>
+              <div class="output-block">
+                  <strong>Output:</strong><span> {{outputString}}</span>
+              </div>
+          </div>
+      </main>
+      <footer role="footer">
+          &copy; Lucas Jordan <span id="date"></span>
+      </footer>
+      <script type="text/javascript" src="./script/vue.min.js"></script>
+      <script type="text/javascript" src="./script/script.js"></script>
+    </body>
 </html>

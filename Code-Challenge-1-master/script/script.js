@@ -9,50 +9,129 @@
 /*-----------------------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 -------------------------------------------------------------------------------
-#   Vue Application
+#   Vue.js Instance
 #   Update footer date
+-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------
+#   Vue.js Instance
 -----------------------------------------------------------------------------*/
 const app = new Vue({
   el: '#app',
   data: {
     commands: '',
-    pacman: `<img class="pac-man" data-face="north" src="./image/Pacman.svg"/>`,
-    grid_items: [
-        [0, 4], [1, 4], [2, 4], [3, 4], [4, 4],
-        [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
-        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2],
-        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
-        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
-    ]
+    outputString: '',
+    xPos: 0,
+    yPos: 0,
+    minX: 0,
+    maxX:4,
+    minY:0,
+    maxY: 4,
+    facePos: "",
+    placed: false
   },
   methods: {
+      /* Capture text from the commands text box and convert to array */
       captureCommands: function() {
         let commandArray = this.commands.replace( /\n/g, " " ).split( " " )
-        for ( let i = 0; i < commandArray.length; i++ ) {
-            if ( commandArray[i].toString().toUpperCase() == "PLACE" ) {
-                let placeArguments = commandArray[i+1].split(",")
-                if ( parseInt(placeArguments[0]) < 5 &&
-                     parseInt(placeArguments[1]) < 5 &&
-                     (
-                       placeArguments[2].toString().toUpperCase() == "NORTH" ||
-                       placeArguments[2].toString().toUpperCase() == "SOUTH" ||
-                       placeArguments[2].toString().toUpperCase() == "EAST" ||
-                       placeArguments[2].toString().toUpperCase() == "WEST"
-                     )
-                   ) {
-                       let x = parseInt(placeArguments[0])
-                       let y = parseInt(placeArguments[1])
-                       let face = placeArguments[2].toString().toUpperCase()
-                       this.place( x, y, face )
-                   }
+        /* Iterate over array of commands looking for keywords */
+        for( let i = 0; i < commandArray.length; i++ ) {
+            /* If PLACE commands found run place function to validate the
+            * command
+            */
+            if( commandArray[i].toString().toUpperCase() == "PLACE" ) {
+                this.place( commandArray[i+1] )
+            /* Turn LEFT command */
+            } else if( commandArray[i].toString().toUpperCase() == "LEFT" && this.placed == true ) {
+                switch(this.facePos){
+                  case "NORTH":
+                    this.facePos = "WEST"
+                    break;
+                  case "SOUTH":
+                    this.facePos = "EAST"
+                    break;
+                  case "EAST":
+                    this.facePos = "NORTH"
+                    break;
+                  case "WEST":
+                    this.facePos = "SOUTH"
+                    break;
+                }
+            /* Turn RIGHT Command */
+            } else if( commandArray[i].toString().toUpperCase() == "RIGHT" && this.placed == true ) {
+                switch(this.facePos){
+                  case "NORTH":
+                    this.facePos = "EAST"
+                    break;
+                  case "SOUTH":
+                    this.facePos = "WEST"
+                    break;
+                  case "EAST":
+                    this.facePos = "SOUTH"
+                    break;
+                  case "WEST":
+                    this.facePos = "NORTH"
+                    break;
+                }
+            /* MOVE Command */
+            } else if( commandArray[i].toString().toUpperCase() == "MOVE" && this.placed == true ) {
+                this.move()
+            /* REPORT Command */
+            } else if( commandArray[i].toString().toUpperCase() == "REPORT" && this.placed == true ) {
+                this.output()
             }
         }
       },
-      place: function( x, y, face ){
-          console.log("Inside place: ", x ,y, face)
+      place: function( item ){
+
+        let placeArguments = item.split(",")
+        if( parseInt(placeArguments[0]) >= this.minX &&
+            parseInt(placeArguments[0]) <= this.maxX &&
+            parseInt(placeArguments[1]) >= this.minY &&
+            parseInt(placeArguments[1]) <= this.maxY &&
+             (
+               placeArguments[2].toString().toUpperCase() == "NORTH" ||
+               placeArguments[2].toString().toUpperCase() == "SOUTH" ||
+               placeArguments[2].toString().toUpperCase() == "EAST" ||
+               placeArguments[2].toString().toUpperCase() == "WEST"
+             )
+           ) {
+              /* We have found a valid place command now update pacman's position*/
+               this.placed = true
+               this.xPos = parseInt(placeArguments[0])
+               this.yPos = parseInt(placeArguments[1])
+               this.facePos = placeArguments[2].toString().toUpperCase()
+               return true
+           } else {
+             /* Place command was invalid simply return back to our loop of commands */
+             return true
+           }
+      },
+      /* The Move function moves pacman in x or y position only if the move is valid */
+      move: function() {
+          switch(this.facePos){
+            case "NORTH":
+              if( this.yPos < this.maxY ) { this.yPos = this.yPos + 1 }
+              break;
+            case "SOUTH":
+              if( this.yPos > this.minY ) { this.yPos = this.yPos - 1 }
+              break;
+            case "EAST":
+              if( this.xPos < this.maxX ) { this.xPos = this.xPos + 1 }
+              break;
+            case "WEST":
+              if( this.xPos > this.minX ) { this.xPos = this.xPos - 1 }
+              break;
+          }
+      },
+      /* Output function updates the data outputString with the position of pacman */
+      output: function() {
+        this.outputString = this.xPos +","+ this.yPos +","+ this.facePos
       }
   }
 })
+
 
 /*-----------------------------------------------------------------------------
 #   Update footer date

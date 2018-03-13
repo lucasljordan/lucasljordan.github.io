@@ -56,11 +56,11 @@
               </p>
           </div>
           <div>
-              <div class="control-block">
+              <form @submit.prevent="captureCommands" class="control-block">
                   <label for="commands">Commands:</label>
                   <textarea id="commands" v-model.lazy="commands"  rows="8"></textarea>
-                  <button v-on:click="captureCommands">Submit Commands</button>
-              </div>
+                  <button type="submit">Submit Commands</button>
+              </form>
               <div class="output-block">
                   <strong>Output:</strong><span> {{outputString}}</span>
               </div>

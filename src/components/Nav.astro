@@ -15,6 +15,17 @@ const { navLinks } = Astro.props;
 ---
 
 <div class="nav row">
-  <div class="text-primary font-heading">Lucas L Jordan</div>
+  <span>
+    <a href="/" class="heading text-primary font-heading" tabindex="0">
+      Lucas L Jordan
+    </a>
+  </span>
   {navLinks && <Navbar navLinks={navLinks} />}
 </div>
+
+<style>
+  .heading,
+  .heading:hover {
+    text-decoration: none;
+  }
+</style>

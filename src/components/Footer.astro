@@ -1,12 +1,67 @@
 ---
 // Component Props:
-// interface Props {}
+interface Props {
+  navLinks?: NavLink[];
+}
 
 // Component variables:
-// const {} = Astro.props;
+const { navLinks } = Astro.props;
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<div>Footer</div>
+<footer>
+  <nav>
+    <ul>
+      {
+        navLinks &&
+          navLinks.map((link: NavLink) => (
+            <li>
+              <a
+                href={link.url}
+                class:list={[
+                  "footer__nav__link",
+                  "font-semibold",
+                  link.active && "active",
+                ]}
+                target={link.target}
+                aria-current={link.active ? "page" : undefined}
+                tabindex="0"
+              >
+                {link.title}
+              </a>
+            </li>
+          ))
+      }
+    </ul>
+  </nav>
+  <hr />
+  <h4 class="text-primary">Acknowledgement of Country</h4>
+  <p>
+    I would like to respectfully acknowledges the Traditional Owners of the land
+    I live and work, the Wurundjeri Woi-wurrung people of the Eastern Kulin and
+    recognise their continuing connection to land, waters and culture. I
+    acknowledge that these lands were stolen and sovereignty was never ceded. I
+    pay my respects to their Elders past and present.
+  </p>
+</footer>
+
+<style>
+  ul {
+    list-style: none;
+  }
+  ul li {
+    display: inline;
+  }
+  .footer__nav__link {
+    font-family: var(--font-body);
+  }
+  .footer__nav__link.active {
+    text-decoration: underline;
+    -moz-text-decoration-color: var(--colour-primary);
+    text-decoration-color: var(--colour-primary);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+</style>

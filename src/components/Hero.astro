@@ -1,4 +1,7 @@
 ---
+// Components Import:
+import Button from "./Button.astro";
+
 // Component Props:
 // interface Props {}
 
@@ -9,4 +12,28 @@
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<div>Hero</div>
+<h1 class="hero">
+  <strong
+    >Hi, I’m <a href="mailto:hello@lucasjordan.dev" tabindex="0">Lucas Jordan</a
+    ></strong
+  >, developer from Melbourne, Australia. I have 10 years of industry experience
+  and have a passion for <a
+    href="https://www.a11yproject.com/"
+    target="_blank"
+    tabindex="0">web acessibility</a
+  >.
+</h1>
+
+<Button variant="link" label="Get in touch" />
+
+<style>
+  .hero {
+    color: var(--gray-100);
+    font-family: var(--font-body);
+
+    strong {
+      color: var(--colour-primary);
+      font-family: var(--font-header);
+    }
+  }
+</style>

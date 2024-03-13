@@ -135,6 +135,10 @@ a {
 a:hover,
 a:active {
   text-decoration: underline;
+  -moz-text-decoration-color: var(--colour-primary);
+  text-decoration-color: var(--colour-primary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 .font-body {

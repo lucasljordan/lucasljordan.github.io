@@ -1,0 +1,20 @@
+---
+// Component Imports:
+import Navbar from "./Navbar.astro";
+
+// Component Props:
+interface Props {
+  navLinks?: NavLink[];
+}
+
+// Component variables:
+const { navLinks } = Astro.props;
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<div class="nav row">
+  <div class="text-primary font-heading">Lucas L Jordan</div>
+  {navLinks && <Navbar navLinks={navLinks} />}
+</div>

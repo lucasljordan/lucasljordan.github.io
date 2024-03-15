@@ -1,11 +1,11 @@
 {
   "name": "lucasljordan.github.io",
-  "type": "module",
-  "version": "0.0.1",
   "description": "Personal website of Lucas L Jordan",
-  "repository": "https://github.com/lucasljordan/lucasljordan.github.io.git",
   "author": "Lucas L Jordan",
   "license": "GPL-2.0-or-later",
+  "version": "0.1.0",
+  "repository": "https://github.com/lucasljordan/lucasljordan.github.io.git",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

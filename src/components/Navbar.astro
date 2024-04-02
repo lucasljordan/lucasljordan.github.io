@@ -11,7 +11,7 @@ const { navLinks } = Astro.props;
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<nav>
+<nav class="nav-bar">
   <ul>
     {
       navLinks &&
@@ -39,9 +39,13 @@ const { navLinks } = Astro.props;
 <style>
   ul {
     list-style: none;
+    padding-inline-start: 0px;
   }
   ul li {
     display: inline;
+  }
+  ul li:not(:last-of-type) {
+    margin-right: 0.5rem;
   }
   .nav-bar__nav__link {
     font-family: var(--font-body);

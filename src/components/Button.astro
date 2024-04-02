@@ -49,17 +49,22 @@ const Element: HTMLTag = ElementTypeMapping[variant];
 <style>
   .Button {
     background-color: var(--colour-primary);
-    border-radius: 0.625rem;
+    border-radius: 0.25rem;
     color: var(--gray-100);
     cursor: pointer;
     display: inline-block;
     font-family: var(--font-body);
     font-size: 1.5rem;
     font-style: normal;
+    font-weight: 700;
     line-height: normal;
-    padding: 0.9375rem;
+    padding: 0.625rem;
     position: relative;
     text-align: center;
+    text-decoration: none;
+  }
+  .Button:hover {
+    background-color: color-mix(in srgb,var(--colour-primary),#000 13%);
   }
   .Button:focus-visible {
     outline: solid 2px var(--gray-100);
@@ -74,10 +79,9 @@ const Element: HTMLTag = ElementTypeMapping[variant];
     cursor: not-allowed;
   }
   .Button.link {
-    border-radius: 1.25rem;
+    border-radius: 0.25rem;
     font-size: 1.25rem;
-    padding: 1.44rem;
-    width: 100%;
+    padding: 0.625rem;
     max-width: 593px;
   }
 </style>

@@ -1,9 +1,9 @@
 ---
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
-import Layout from "../layouts/Layout.astro";
+  import Layout from "../layouts/Layout.astro";
 
 // Component Imports:
-import Hero from "@components/Hero.astro";
+import AboutMe from "@components/AboutMe.astro";
 import Contact from "@components/Contact.astro";
 import Footer from "@components/Footer.astro";
 
@@ -23,11 +23,23 @@ const pageNavLinks: NavLink[] = [
 ---
 
 <Layout title={pageTitle} description={pageDescription} navLinks={pageNavLinks}>
-	<header>
-		<Hero />
-	</header>
 	<main class="wrapper">
-		<Contact />
+    <div class="about-section">
+      <AboutMe />
+		  <Contact />
+    </div>
 	</main>
 	<Footer navLinks={pageNavLinks} />
 </Layout>
+
+<style>
+  .about-section {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 768px) {
+    .about-section {
+      flex-direction: row;
+    }
+  }
+</style>

@@ -24,10 +24,8 @@ const { title, description, navLinks } = Astro.props;
 	</head>
 	<body>
 		<div class="stack root">
-			<div class="flex-grow">
-				<Nav navLinks={navLinks} />
-				<slot />
-			</div>
+      <Nav navLinks={navLinks} />
+      <slot />
 		</div>
 		<style>
 			.root {

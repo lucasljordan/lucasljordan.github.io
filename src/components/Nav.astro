@@ -14,7 +14,7 @@ const { navLinks } = Astro.props;
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<div class="nav row">
+<div class="nav wrapper row">
   <span>
     <a href="/" class="heading text-primary font-heading" tabindex="0">
       Lucas L Jordan
@@ -24,8 +24,15 @@ const { navLinks } = Astro.props;
 </div>
 
 <style>
+  .nav {
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
   .heading,
   .heading:hover {
     text-decoration: none;
+    font-weight: 700;
   }
 </style>

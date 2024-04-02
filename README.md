@@ -1,10 +1,10 @@
 # Lucas L Jordan's personal website
 
-## 🪣 Repository
+## Repository 🗃️
 
 **[lucasljordan/lucasljordan.github.io | GitHub](https://github.com/lucasljordan/lucasljordan.github.io)**
 
-## 🚀 Project Structure
+## Project Structure 📂
 
 ```text
 /
@@ -26,7 +26,7 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## Getting started
+## Getting started 🏁
 
 Run the following commands to get the project up and running:
 
@@ -38,7 +38,7 @@ yarn install
 yarn run dev
 ```
 
-## Build for production
+## Build for production 🏗️
 
 Run the following commands to build the project for production:
 
@@ -50,7 +50,7 @@ yarn install
 yarn run build
 ```
 
-## 🧞 Commands
+## Commands 🧞
 
 All commands are run from the root of the project, from a terminal:
 
@@ -63,6 +63,6 @@ All commands are run from the root of the project, from a terminal:
 | `yarn run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `yarn run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## Want to learn more? 👀
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

@@ -6,53 +6,73 @@ interface Props {
 
 // Component variables:
 const { navLinks } = Astro.props;
+const currentYear = new Date().getFullYear();
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <footer>
-  <nav>
-    <ul>
-      {
-        navLinks &&
-          navLinks.map((link: NavLink) => (
-            <li>
-              <a
-                href={link.url}
-                class:list={[
-                  "footer__nav__link",
-                  "font-semibold",
-                  link.active && "active",
-                ]}
-                target={link.target}
-                aria-current={link.active ? "page" : undefined}
-                tabindex="0"
-              >
-                {link.title}
-              </a>
-            </li>
-          ))
-      }
-    </ul>
-  </nav>
-  <hr />
-  <h4 class="text-primary">Acknowledgement of Country</h4>
-  <p>
-    I would like to respectfully acknowledges the Traditional Owners of the land
-    I live and work, the Wurundjeri Woi-wurrung people of the Eastern Kulin and
-    recognise their continuing connection to land, waters and culture. I
-    acknowledge that these lands were stolen and sovereignty was never ceded. I
-    pay my respects to their Elders past and present.
-  </p>
+  <div class="wrapper">
+    <nav>
+      <ul>
+        {
+          navLinks &&
+            navLinks.map((link: NavLink) => (
+              <li>
+                <a
+                  href={link.url}
+                  class:list={[
+                    "footer__nav__link",
+                    "font-semibold",
+                    link.active && "active",
+                  ]}
+                  target={link.target}
+                  aria-current={link.active ? "page" : undefined}
+                  tabindex="0"
+                >
+                  {link.title}
+                </a>
+              </li>
+            ))
+        }
+      </ul>
+    </nav>
+    <section class="acknowledgement-of-Country">
+      <h4 class="text-primary">Acknowledgement of Country</h4>
+      <p>
+        I would like to respectfully acknowledge the Traditional Owners of the land
+        I live and work on, the Wurundjeri Woi-wurrung people of the Eastern Kulin and
+        recognise their continuing connection to land, waters and culture. I
+        acknowledge that these lands were stolen and sovereignty was never ceded. I
+        pay my respects to their Elders past and present.
+      </p>
+    </section>
+    <section class="copyright">
+      Design and code &copy; {currentYear} Lucas Jordan
+      &nbsp;&#149;&nbsp; Made with HTML, CSS and Powered by 
+      <strong>
+        <a href="https://astro.build/" target="_blank" tabindex="0">Astro 🚀</a>
+      </strong>
+    </section>
+  </div>
 </footer>
 
 <style>
+  footer {
+    border-top: solid 1px var(--gray-100);
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
   ul {
     list-style: none;
+    padding-inline-start: 0px;
   }
   ul li {
     display: inline;
+  }
+  ul li:not(:last-of-type) {
+    margin-right: 0.5rem;
   }
   .footer__nav__link {
     font-family: var(--font-body);
@@ -63,5 +83,16 @@ const { navLinks } = Astro.props;
     text-decoration-color: var(--colour-primary);
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
+  }
+  .acknowledgement-of-Country {
+    margin-top: 1.4rem;
+  }
+  .acknowledgement-of-Country h4 {
+    margin-bottom: 0.4rem;
+  }
+  .copyright {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    text-align: center;
   }
 </style>

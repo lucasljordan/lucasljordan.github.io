@@ -1,0 +1,87 @@
+---
+import type { HTMLAttributes, HTMLTag } from "astro/types";
+
+enum ElementTypeMapping {
+  "submit" = "input",
+  "button" = "button",
+  "link" = "a",
+}
+
+interface Props extends HTMLAttributes<"input" | "button" | "a"> {
+  label?: number | string | string[];
+  disabled?: boolean;
+  fullWidth?: boolean;
+  href?: string;
+  id?: string;
+  target?: "_blank" | "_self";
+  variant?: "submit" | "button" | "link";
+  width?: number;
+}
+
+const {
+  label = "",
+  disabled = false,
+  fullWidth = false,
+  href,
+  id,
+  target,
+  variant = "submit",
+  width,
+} = Astro.props;
+const Element: HTMLTag = ElementTypeMapping[variant];
+---
+
+<Element
+  id={id}
+  class=`Button font-semibold ${variant}`
+  disabled={disabled ? disabled : undefined}
+  type={variant === "submit" || variant === "button" ? `${variant}` : undefined}
+  value={variant === "submit" ? label : undefined}
+  href={variant === "link" && href ? href : undefined}
+  target={variant === "link" && target ? target : undefined}
+  style={`width: ${fullWidth ? "100%" : width ? `${width}px` : "auto"}`}
+  tabindex="0"
+>
+  {variant !== "submit" && `${label}`}
+  <slot />
+</Element>
+
+<style>
+  .Button {
+    background-color: var(--colour-primary);
+    border-radius: 0.25rem;
+    color: var(--gray-100);
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0.625rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+  }
+  .Button:hover {
+    background-color: color-mix(in srgb,var(--colour-primary),#000 13%);
+  }
+  .Button:focus-visible {
+    outline: solid 2px var(--gray-100);
+  }
+  .Button:disabled {
+    background-color: color-mix(
+      in srgb,
+      var(--colour-primary) 55%,
+      transparent
+    );
+    color: color-mix(in srgb, var(--gray-100) 55%, transparent);
+    cursor: not-allowed;
+  }
+  .Button.link {
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    padding: 0.625rem;
+    max-width: 593px;
+  }
+</style>

@@ -1,0 +1,21 @@
+{
+  "name": "lucasljordan.github.io",
+  "description": "Personal website of Lucas L Jordan",
+  "author": "Lucas L Jordan",
+  "license": "GPL-2.0-or-later",
+  "version": "0.1.0",
+  "repository": "https://github.com/lucasljordan/lucasljordan.github.io.git",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.4.15",
+    "@astrojs/check": "^0.5.6",
+    "typescript": "^5.4.2"
+  }
+}

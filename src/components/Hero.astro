@@ -1,0 +1,80 @@
+---
+// Components Import:
+// import Button from "./Button.astro";
+
+// Component Props:
+// interface Props {}
+
+// Component variables:
+// const {} = Astro.props;
+
+const startDate = "01/10/2013";
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<div class="hero-wrapper">
+  <h1 class="hero">
+    <strong
+      >Hi, I&#39;m <a href="mailto:hello@lucasjordan.dev" tabindex="0"
+        >Lucas Jordan</a
+      ></strong
+    >, Software Developer from Naarm (Melbourne, Australia). I love crafting
+    things in HTML &amp; CSS as well as writing performant JavaScript. I also
+    have a passion for usability and <a
+      href="https://www.a11yproject.com/"
+      target="_blank"
+      tabindex="0">web acessibility</a
+    >.
+  </h1>
+
+  <!-- 
+    TODO - Later
+    <div class="hero--button">
+      <Button id="btn-contact" variant="link" label="Get in touch 👇🏻" href="#contact" />
+    </div>
+  -->
+</div>
+
+<style>
+  .hero-wrapper {
+    display: block;
+    -webkit-justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 70%;
+  }
+  .hero {
+    color: var(--gray-100);
+    font-family: var(--font-body);
+    margin-top: 13.875rem;
+    margin-bottom: 13.875rem;
+
+    strong {
+      color: var(--colour-primary);
+      font-family: var(--font-header);
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+    em {
+      line-height: 1;
+      font-family: var(--font-header);
+      font-size: 2.375rem;
+      font-style: normal;
+    }
+  }
+  .hero--button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 13.875rem;
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+</style>

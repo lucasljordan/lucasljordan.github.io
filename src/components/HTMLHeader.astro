@@ -1,0 +1,31 @@
+---
+// Style Imports:
+import "@styles/styles.css";
+import "@styles/themify-icons.css"
+
+// Component Props:
+interface Props {
+  title?: string | undefined;
+  description?: string | undefined;
+}
+
+// Component variables:
+const {
+  title = "Lucas L Jordan",
+  description = "Developer from Melbourne Australia",
+} = Astro.props;
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+<link rel="manifest" href="/manifest.webmanifest">

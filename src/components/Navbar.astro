@@ -1,0 +1,61 @@
+---
+// Component Props:
+interface Props {
+  navLinks?: NavLink[];
+}
+
+// Component variables:
+const { navLinks } = Astro.props;
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<nav class="nav-bar">
+  <ul>
+    {
+      navLinks &&
+        navLinks.map((link: NavLink) => (
+          <li>
+            <a
+              href={link.url}
+              class:list={[
+                "nav-bar__nav__link",
+                "font-semibold",
+                link.active && "active",
+              ]}
+              target={link.target}
+              aria-current={link.active ? "page" : undefined}
+              tabindex="0"
+            >
+              {link.title}
+            </a>
+          </li>
+        ))
+    }
+  </ul>
+</nav>
+
+<style>
+  ul {
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+  ul li {
+    display: inline;
+  }
+  ul li:not(:last-of-type) {
+    margin-right: 0.5rem;
+  }
+  .nav-bar__nav__link {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+  }
+  .nav-bar__nav__link.active {
+    text-decoration: underline;
+    -moz-text-decoration-color: var(--colour-primary);
+    text-decoration-color: var(--colour-primary);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+</style>

@@ -1,0 +1,44 @@
+---
+// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+import Layout from "../layouts/Layout.astro";
+
+// Component Imports:
+import AboutMe from "@components/AboutMe.astro";
+import Contact from "@components/Contact.astro";
+import Footer from "@components/Footer.astro";
+
+// Component variables:
+const pageTitle: string = "Lucas L Jordan";
+const pageDescription: string = "Developer from Melbourne Australia";
+const pageNavLinks: NavLink[] = [
+  { title: "About", url: "/about", active: false },
+  /* { title: "Blog", url: "/blog", active: false }, - Coming soon! */
+  /* { title: "Contact", url: "#contact", active: false }, TODO */
+  /* { title: "/Uses", url: "/uses", active: false }, - TODO */
+  /* { title: "/Now", url: "/now", active: false }, - TODO */
+];
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<Layout title={pageTitle} description={pageDescription} navLinks={pageNavLinks}>
+  <main class="wrapper">
+    <div class="about-section">
+      <AboutMe />
+    </div>
+    <Contact />
+  </main>
+  <Footer navLinks={pageNavLinks} />
+</Layout>
+
+<style>
+  .about-section {
+    -webkit-align-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+</style>

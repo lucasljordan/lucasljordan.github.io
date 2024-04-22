@@ -1,0 +1,36 @@
+---
+// Learn about using Astro layouts:
+// https://docs.astro.build/en/core-concepts/layouts/
+
+// Component Imports
+import HTMLHeader from "@components/HTMLHeader.astro";
+import Nav from "@components/Nav.astro";
+
+// Layout Props:
+interface Props {
+	title?: string | undefined;
+	description?: string | undefined;
+	navLinks?: NavLink[];
+}
+
+// Layout variables:
+const { title, description, navLinks } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<HTMLHeader title={title} description={description} />
+	</head>
+	<body>
+		<div class="stack root">
+      <Nav navLinks={navLinks} />
+      <slot />
+		</div>
+		<style>
+			.root {
+				min-height: 100%;
+			}
+		</style>
+	</body>
+</html>

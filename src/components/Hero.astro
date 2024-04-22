@@ -1,6 +1,6 @@
 ---
 // Components Import:
-import Button from "./Button.astro";
+// import Button from "./Button.astro";
 
 // Component Props:
 // interface Props {}
@@ -8,28 +8,29 @@ import Button from "./Button.astro";
 // Component variables:
 // const {} = Astro.props;
 
-const startDate = '01/10/2013';
-// @ts-ignore-next-line
-const yearsActive = Math.abs(new Date(new Date() - new Date(startDate)).getFullYear() - 1970);
+const startDate = "01/10/2013";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
+
 <div class="hero-wrapper">
   <h1 class="hero">
     <strong
-      >Hi, I&#39;m <a href="mailto:hello@lucasjordan.dev" tabindex="0">Lucas Jordan</a
+      >Hi, I&#39;m <a href="mailto:hello@lucasjordan.dev" tabindex="0"
+        >Lucas Jordan</a
       ></strong
-    >, Software Developer from Naarm (Melbourne), Australia. I have <em>{yearsActive}</em> years of industry experience
-    and a passion for <a
+    >, Software Developer from Naarm (Melbourne, Australia). I love crafting
+    things in HTML &amp; CSS as well as writing performant JavaScript. I also
+    have a passion for usability and <a
       href="https://www.a11yproject.com/"
       target="_blank"
       tabindex="0">web acessibility</a
-    > &amp; inclusion.
+    >.
   </h1>
 
   <!-- 
-    TODO
+    TODO - Later
     <div class="hero--button">
       <Button id="btn-contact" variant="link" label="Get in touch 👇🏻" href="#contact" />
     </div>

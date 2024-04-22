@@ -9,16 +9,118 @@
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<section>
-  <h1>About Me</h1>
+<article>
+  <div>
+    <h1>About Me</h1>
 
-  <p>
-    Hi, I&#39;m Lucas Jordan. I&#39;m a consultant and a software developer from Narrm (Melbourne), Australia.
-  </p>
-</section>
+    <p>
+      Hi, I&#39;m Lucas Jordan. I&#39;m a consultant &amp; software developer
+      from Naarm (Melbourne, Australia). I specialise in front-end development &
+      acessibility.
+    </p>
+
+    <p>
+      <img
+        src="/images/Lucas-Jordan.jpg"
+        alt="Close-up of Lucas Jordan, a white cis man wearing a black zipped up jacket with long brown hair laying down in front of his shoulders and a short brown beard."
+      />
+
+      My journey building websites began as a hobby back in 2003 when I
+      purchased HTML for the World Wide Web by Elizabeth Castro at a local
+      bookstore for $10. Armed with the knowleded I had gained from that book I
+      started hacking together custom Myspace themes for fun and friends as well
+      as making small personal websites and projects. Eventually when I got
+      older I studied computer science at La Trobe University where I gained a
+      Bachelor in Information Systems before finally gaining my first real job
+      as a PHP Developer in 2013.
+    </p>
+
+    <p>
+      After around a year of cutting my teeth I naturally fell in love with UI
+      design and development which reignited the passion for the web I first
+      flet all those years ago and I haven't looked back since!
+    </p>
+
+    <p>
+      Find me on <a
+        href="https://twitter.com/Lucas_L_Jordan"
+        target="_blank"
+        tabindex="0">Twitter</a
+      >&#44; or send me an email: <a
+        href="mailto:hello@lucasjordan.dev"
+        title="Email hello@lucasjordan.dev"
+        tabindex="0"
+      >
+        hello@lucasjordan.dev
+      </a>.
+    </p>
+  </div>
+  <div>
+    <h2>About this site</h2>
+
+    <p>
+      This website has been lovingly crafted by me using HTML CSS and is powered
+      by the static site generator <a
+        href="https://astro.build/"
+        target="_blank"
+        tabindex="0">Astro</a
+      >
+    </p>
+
+    <p>
+      All code is publically available on <a
+        href="https://github.com/lucasljordan/lucasljordan.github.io"
+        target="_blank"
+        tabindex="0">Github</a
+      > feel free to <s>borrow</s> steal my code just promise to try to learn from
+      it rather than simply copying and pasting 🤞.
+    </p>
+
+    <p>
+      If you encounter any usability/accessibility issues while on my website,
+      please do let me know and I'll fix it ASAP 🙏.
+    </p>
+  </div>
+</article>
 
 <style>
-  section {
+  article > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     padding-bottom: 1rem;
+    max-width: 38rem;
+    width: 100%;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p:not(:first-of-type),
+    h2 {
+      margin-top: 0.6rem;
+    }
+
+    & img {
+      border-radius: 0.63rem;
+      float: left;
+      margin-right: 0.9rem;
+      width: max(37.5%, 18.75rem);
+    }
+
+    a {
+      color: var(--colour-primary);
+      font-weight: 500;
+    }
+  }
+  @media (min-width: 768px) {
+    article {
+      flex-direction: row;
+      gap: 4rem;
+
+      & img {
+        width: 37.5%;
+      }
+    }
   }
 </style>

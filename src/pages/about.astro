@@ -1,6 +1,6 @@
 ---
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
-  import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro";
 
 // Component Imports:
 import AboutMe from "@components/AboutMe.astro";
@@ -11,11 +11,11 @@ import Footer from "@components/Footer.astro";
 const pageTitle: string = "Lucas L Jordan";
 const pageDescription: string = "Developer from Melbourne Australia";
 const pageNavLinks: NavLink[] = [
-	{ title: "About", url: "/about", active: false },
-	/* { title: "Blog", url: "/blog", active: false }, - Coming soon! */
-	/* { title: "Contact", url: "#contact", active: false }, TODO */
-	/* { title: "/Uses", url: "/uses", active: false }, - TODO */
-	/* { title: "/Now", url: "/now", active: false }, - TODO */
+  { title: "About", url: "/about", active: false },
+  /* { title: "Blog", url: "/blog", active: false }, - Coming soon! */
+  /* { title: "Contact", url: "#contact", active: false }, TODO */
+  /* { title: "/Uses", url: "/uses", active: false }, - TODO */
+  /* { title: "/Now", url: "/now", active: false }, - TODO */
 ];
 
 // Full Astro Component Syntax:
@@ -23,23 +23,22 @@ const pageNavLinks: NavLink[] = [
 ---
 
 <Layout title={pageTitle} description={pageDescription} navLinks={pageNavLinks}>
-	<main class="wrapper">
+  <main class="wrapper">
     <div class="about-section">
       <AboutMe />
-		  <Contact />
     </div>
-	</main>
-	<Footer navLinks={pageNavLinks} />
+    <Contact />
+  </main>
+  <Footer navLinks={pageNavLinks} />
 </Layout>
 
 <style>
   .about-section {
+    -webkit-align-items: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-  }
-  @media (min-width: 768px) {
-    .about-section {
-      flex-direction: row;
-    }
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 </style>

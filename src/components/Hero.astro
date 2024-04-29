@@ -49,8 +49,7 @@ const startDate = "01/10/2013";
   .hero {
     color: var(--gray-100);
     font-family: var(--font-body);
-    margin-top: 13.875rem;
-    margin-bottom: 13.875rem;
+    margin: 13.875rem auto;
 
     strong {
       color: var(--colour-primary);
@@ -76,5 +75,11 @@ const startDate = "01/10/2013";
     margin-bottom: 13.875rem;
     padding-top: 1.5rem;
     text-align: center;
+  }
+
+  @media (max-width: 1023px) {
+    .hero {
+      margin: 5rem auto;
+    }
   }
 </style>

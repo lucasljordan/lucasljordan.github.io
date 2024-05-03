@@ -21,11 +21,9 @@ const startDate = "01/10/2013";
         >Lucas Jordan</a
       ></strong
     >, Software Developer from Naarm (Melbourne, Australia). I love crafting
-    things in HTML &amp; CSS as well as writing performant JavaScript. I also
-    have a passion for usability and <a
-      href="https://www.a11yproject.com/"
-      target="_blank"
-      tabindex="0">web acessibility</a
+    things in HTML, CSS &amp; JavaScript. I also have a passion for
+    <a href="https://www.a11yproject.com/" target="_blank" tabindex="0"
+      >web acessibility</a
     >.
   </h1>
 
@@ -52,8 +50,11 @@ const startDate = "01/10/2013";
     margin: 13.875rem auto;
 
     strong {
-      color: var(--colour-primary);
       font-family: var(--font-header);
+
+      a {
+        color: var(--colour-primary);
+      }
     }
 
     a {

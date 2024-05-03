@@ -9,14 +9,28 @@
 ```text
 /
 ├── public/
-│   └── favicon.svg
+│   ├── fonts/
+│   ├── images/
+|   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── AboutMe.astro
+│   │   ├── Button.astro
+│   │   ├── Contact.astro
+│   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── Hero.astro
+│   │   ├── HTMLHeader.astro  # HTML meta tags etc.
+│   │   └── Navbar.astro  # Header navigation menu.
 │   ├── layouts/
 │   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
+│   ├── pages/
+│   |   ├── about.astro
+│   |   ├── ambrose.astro
+│   |   └── index.astro
+|   └── styles/
+|       ├── styles.css
+|       └── themify-icons.css
 └── package.json
 ```
 

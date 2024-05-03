@@ -1,0 +1,107 @@
+---
+// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+import Layout from "../layouts/Layout.astro";
+
+// Component Imports:
+import Contact from "@components/Contact.astro";
+import Footer from "@components/Footer.astro";
+
+// Component variables:
+const pageTitle: string = "Ambrose";
+const pageDescription: string = "A black and white cat";
+const pageNavLinks: NavLink[] = [
+  { title: "About", url: "/about", active: false },
+  /* { title: "Blog", url: "/blog", active: false }, - Coming soon! */
+  /* { title: "Contact", url: "#contact", active: false }, TODO */
+  /* { title: "/Uses", url: "/uses", active: false }, - TODO */
+  /* { title: "/Now", url: "/now", active: false }, - TODO */
+];
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<Layout title={pageTitle} description={pageDescription} navLinks={pageNavLinks}>
+  <main class="wrapper">
+    <article class="ambrose">
+      <div>
+        <h1>Ambrose</h1>
+
+        <p>
+          Abrose is our adorable black and white cat. My wife are I adopted him
+          from a shelter in 2013. He is quite scared of other people but is
+          increadibly affectionate to my wife and I. He gives us tight kolala
+          like hugs and often likes to give me these while I'm on zoom meetings
+          on the days I work from home.
+        </p>
+
+        <p>This page is dedicated to my favourite little guy Ambrose!</p>
+
+        <img
+          src="/images/ambrose01.jpeg"
+          alt="Ambrose a black and white cat lays on his side on the carpet. Light is shining through a nearby window causing a spectrum of light to show on the carpet next to him."
+        />
+
+        <img
+          src="/images/ambrose02.jpg"
+          alt="Ambrose a black and white cat is laying on the back of the couch next to me with his front paws lovingly resting on my shoulder."
+        />
+
+        <img
+          src="/images/ambrose03.jpg"
+          alt="A close-up of Ambrose a black and white cat showing his beautiful yellow eyes and distinctive black dot on his otherwise pink nose."
+        />
+
+        <img
+          src="/images/ambrose04.jpg"
+          alt="Ambrose a black and white cat laying on our couch next to me. His left front paw is placed in my open hand."
+        />
+
+        <img
+          src="/images/ambrose05.jpg"
+          alt="Ambrose a black and white cat is laying on my computer desk with my wireless mouse resting between his front paws."
+        />
+
+        <img
+          src="/images/ambrose06.jpg"
+          alt="Ambrose a black and white cat laying on top of my computer desk."
+        />
+      </div>
+    </article>
+    <Contact />
+  </main>
+  <Footer navLinks={pageNavLinks} />
+</Layout>
+
+<style>
+  article {
+    -webkit-align-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  article > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    max-width: 38rem;
+    width: 100%;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    img {
+      border-radius: 0.63rem;
+      height: auto;
+      margin: 0 auto 1rem auto;
+      width: 100%;
+    }
+    img:not(:first-of-type) {
+      margin: 1rem auto;
+    }
+  }
+</style>

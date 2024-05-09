@@ -1,0 +1,119 @@
+---
+// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+import Layout from "../layouts/Layout.astro";
+
+// Component Imports:
+import Contact from "@components/Contact.astro";
+import Footer from "@components/Footer.astro";
+
+// Component variables:
+const pageTitle: string = "Accessibility";
+const pageDescription: string = "accessibility statement for lucasjordan.dev";
+const pageNavLinks: NavLink[] = [
+  { title: "About", url: "/about", active: false },
+  /* { title: "Blog", url: "/blog", active: false }, - Coming soon! */
+  /* { title: "Contact", url: "#contact", active: false }, TODO */
+  /* { title: "/Uses", url: "/uses", active: false }, - TODO */
+  /* { title: "/Now", url: "/now", active: false }, - TODO */
+];
+
+const footerNavLinks: NavLink[] = [
+  { title: "About", url: "/about", active: false },
+  { title: "Accessibility", url: "/accessibility", active: true },
+];
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<Layout title={pageTitle} description={pageDescription} navLinks={pageNavLinks}>
+  <main class="wrapper">
+    <article class="accessibility">
+      <div>
+        <h1>Accessibility statement for lucasjordan.dev</h1>
+
+        <p>This accessibility statement applies to lucasjordan.dev.</p>
+
+        <p>
+          As an ally and champion of web accessibility I want as many people as
+          possible to be able to use my website. This mean this website has been
+          designed with accessibility at the core of its design.
+        </p>
+
+        <p>
+          To that aim this website has the following accessibility features:
+        </p>
+
+        <ul>
+          <li>
+            This website complies with the <a
+              href="https://www.w3.org/TR/WCAG20/"
+              target="_blank"
+              tabindex="0"
+              >W3C Web Content Accessibility Guidelines 2.0 AA standard</a
+            >.
+          </li>
+          <li>
+            This website has been built according to HTML 5 specifications.
+          </li>
+          <li>
+            The layout of this website is controlled by Cascading Style Sheets
+            (CSS) and has been written according to the CSS 2.1 specifications.
+            The site is still navigable for users who do not use CSS or
+            graphical browsers.
+          </li>
+          <li>
+            This webside is navigatable using a keyboard or speech recognition
+            software.
+          </li>
+          <li>zoom in up to 400% without the text spilling off the screen.</li>
+          <li>
+            listen to the website using a screen reader (including the most
+            recent versions of JAWS, NVDA and VoiceOver).
+          </li>
+        </ul>
+
+        <p>
+          If you encounter any accessibility issues while on my website, please
+          email me at <a href="mailto:hello@lucasjordan.dev" tabindex="0"
+            >hello@lucasjordan.dev</a
+          >.
+        </p>
+      </div>
+    </article>
+    <Contact />
+  </main>
+  <Footer navLinks={footerNavLinks} />
+</Layout>
+
+<style>
+  article {
+    -webkit-align-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  article > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    max-width: 38rem;
+    width: 100%;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+  }
+  .accessibility {
+    a {
+      color: var(--colour-primary);
+      font-family: var(--font-header);
+    }
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+  }
+</style>

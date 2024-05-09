@@ -17,6 +17,10 @@ const pageNavLinks: NavLink[] = [
 	/* { title: "/Uses", url: "/uses", active: false }, - TODO */
 	/* { title: "/Now", url: "/now", active: false }, - TODO */
 ];
+const footerNavLinks: NavLink[] = [
+	{ title: "About", url: "/about", active: false },
+	{ title: "Accessibility", url: "/accessibility", active: false },
+];
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -29,5 +33,5 @@ const pageNavLinks: NavLink[] = [
 	<main class="wrapper">
 		<Contact />
 	</main>
-	<Footer navLinks={pageNavLinks} />
+	<Footer navLinks={footerNavLinks} />
 </Layout>

@@ -31,7 +31,9 @@ const footerNavLinks: NavLink[] = [
     <div class="about-section">
       <AboutMe />
     </div>
-    <Contact />
+    <div class="contact-section">
+      <Contact />
+    </div>
   </main>
   <Footer navLinks={footerNavLinks} />
 </Layout>
@@ -44,5 +46,13 @@ const footerNavLinks: NavLink[] = [
     flex-direction: column;
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 38rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    width: 100%;
   }
 </style>

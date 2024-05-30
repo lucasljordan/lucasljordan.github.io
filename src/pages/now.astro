@@ -7,18 +7,18 @@ import Contact from "@components/Contact.astro";
 import Footer from "@components/Footer.astro";
 
 // Component variables:
-const pageTitle: string = "Ambrose";
+const pageTitle: string = "Now";
 const pageDescription: string = "A black and white cat";
 const pageNavLinks: NavLink[] = [
   { title: "About", url: "/about", active: false },
   /* { title: "Blog", url: "/blog", active: false }, - Coming soon! */
   /* { title: "Contact", url: "#contact", active: false }, TODO */
   /* { title: "/Uses", url: "/uses", active: false }, - TODO */
-  { title: "/now", url: "/now", active: false },
+  { title: "/now", url: "/now", active: true },
 ];
 const footerNavLinks: NavLink[] = [
   { title: "About", url: "/about", active: false },
-  { title: "/now", url: "/now", active: false },
+  { title: "/now", url: "/now", active: true },
   { title: "Accessibility", url: "/accessibility", active: false },
 ];
 
@@ -28,17 +28,44 @@ const footerNavLinks: NavLink[] = [
 
 <Layout title={pageTitle} description={pageDescription} navLinks={pageNavLinks}>
   <main class="wrapper">
-    <article class="404">
+    <article class="ambrose">
       <div>
-        <h1>404 Page Not Found</h1>
-
-        <p>I'm sorry, this page doesn't seem to exist.</p>
+        <h1>Now</h1>
 
         <p>
-          Return <strong
-            ><a href="/" class="font-heading text-primary">Home</a></strong
+          This page is dedicated to what I'm doing now! The idea being this
+          pages existence should promt me to regularly update it for my own
+          accountability as well as for anyone who might be interested. Read
+          more about <strong
+            ><a href="https://nownownow.com/about" tabindex="0" target="_blank"
+              >Now pages</a
+            ></strong
           >.
         </p>
+
+        <h2>May, 2024</h2>
+
+        <p>
+          I've had a lot of opporunities to mentor at work! ❤ It's a very cold
+          Atumn in Naarm but at least the days are mostly sunny. I've spent some
+          time setting up my retro video game collection and playnig old games.
+        </p>
+
+        <ul class="ls-none">
+          <li>
+            <strong>Currently Playing:</strong>
+            Fallout New Vegas (PS3), The Legend of Zelda: Twilight Princess (Game
+            Cube), Hard Edge (PS1)
+          </li>
+          <li>
+            <strong>Currently Watching:</strong>
+            Fallout, X-Men'97
+          </li>
+          <li>
+            <strong>Currently Reading:</strong>
+            Neighbourhood Guide to Cycling Naarm by Trent Holden and Kate Morgan.
+          </li>
+        </ul>
       </div>
     </article>
     <div class="contact-section">

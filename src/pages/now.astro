@@ -7,18 +7,18 @@ import Contact from "@components/Contact.astro";
 import Footer from "@components/Footer.astro";
 
 // Component variables:
-const pageTitle: string = "Ambrose";
+const pageTitle: string = "Now";
 const pageDescription: string = "A black and white cat";
 const pageNavLinks: NavLink[] = [
   { title: "About", url: "/about", active: false },
   /* { title: "Blog", url: "/blog", active: false }, - Coming soon! */
   /* { title: "Contact", url: "#contact", active: false }, TODO */
   /* { title: "/Uses", url: "/uses", active: false }, - TODO */
-  { title: "/now", url: "/now", active: false },
+  { title: "/now", url: "/now", active: true },
 ];
 const footerNavLinks: NavLink[] = [
   { title: "About", url: "/about", active: false },
-  { title: "/now", url: "/now", active: false },
+  { title: "/now", url: "/now", active: true },
   { title: "Accessibility", url: "/accessibility", active: false },
 ];
 
@@ -30,47 +30,45 @@ const footerNavLinks: NavLink[] = [
   <main class="wrapper">
     <article class="ambrose">
       <div>
-        <h1 class="text-primary">Ambrose</h1>
+        <h1 class="text-primary">Now</h1>
 
         <p>
-          Abrose is our adorable black and white cat. My wife are I adopted him
-          from a shelter in 2013. He is quite scared of other people but is
-          incredibly affectionate to my wife and I. He gives us tight kolala
-          like hugs and often likes to give me these while I'm on zoom meetings
-          on the days I work from home.
+          This page is dedicated to what I'm doing now! The idea being this
+          pages existence should promt me to regularly update it for my own
+          accountability as well as for anyone who might be interested. Read
+          more about <strong
+            ><a
+              href="https://nownownow.com/about"
+              tabindex="0"
+              target="_blank"
+              class="text-primary">Now pages</a
+            ></strong
+          >.
         </p>
 
-        <p>This page is dedicated to my favourite little guy Ambrose!</p>
+        <h2 class="text-primary">May, 2024</h2>
 
-        <img
-          src="/images/ambrose01.jpeg"
-          alt="Ambrose a black and white cat lays on his side on the carpet. Light is shining through a nearby window causing a spectrum of light to show on the carpet next to him."
-        />
+        <p>
+          I've had a lot of opporunities to mentor at work! ❤ It's a very cold
+          Atumn in Naarm but at least the days are mostly sunny. I've spent some
+          time setting up my retro video game collection and playnig old games.
+        </p>
 
-        <img
-          src="/images/ambrose02.jpg"
-          alt="Ambrose a black and white cat is laying on the back of the couch next to me with his front paws lovingly resting on my shoulder."
-        />
-
-        <img
-          src="/images/ambrose03.jpg"
-          alt="A close-up of Ambrose a black and white cat showing his beautiful yellow eyes and distinctive black dot on his otherwise pink nose."
-        />
-
-        <img
-          src="/images/ambrose04.jpg"
-          alt="Ambrose a black and white cat laying on our couch next to me. His left front paw is placed in my open hand."
-        />
-
-        <img
-          src="/images/ambrose05.jpg"
-          alt="Ambrose a black and white cat is laying on my computer desk with my wireless mouse resting between his front paws."
-        />
-
-        <img
-          src="/images/ambrose06.jpg"
-          alt="Ambrose a black and white cat laying on top of my computer desk."
-        />
+        <ul class="ls-none">
+          <li>
+            <strong>Currently Playing:</strong>
+            Fallout New Vegas (PS3), The Legend of Zelda: Twilight Princess (Game
+            Cube), Hard Edge (PS1)
+          </li>
+          <li>
+            <strong>Currently Watching:</strong>
+            Fallout, X-Men'97
+          </li>
+          <li>
+            <strong>Currently Reading:</strong>
+            Neighbourhood Guide to Cycling Naarm by Trent Holden and Kate Morgan.
+          </li>
+        </ul>
       </div>
     </article>
     <div class="contact-section">

@@ -30,7 +30,7 @@ const footerNavLinks: NavLink[] = [
   <main class="wrapper">
     <article class="ambrose">
       <div>
-        <h1>Ambrose</h1>
+        <h1 class="text-primary">Ambrose</h1>
 
         <p>
           Abrose is our adorable black and white cat. My wife are I adopted him
@@ -73,7 +73,9 @@ const footerNavLinks: NavLink[] = [
         />
       </div>
     </article>
-    <Contact />
+    <div class="contact-section">
+      <Contact />
+    </div>
   </main>
   <Footer navLinks={footerNavLinks} />
 </Layout>
@@ -108,5 +110,13 @@ const footerNavLinks: NavLink[] = [
     img:not(:first-of-type) {
       margin: 1rem auto;
     }
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 38rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    width: 100%;
   }
 </style>

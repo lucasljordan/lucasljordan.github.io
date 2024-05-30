@@ -31,7 +31,9 @@ const footerNavLinks: NavLink[] = [
   <main class="wrapper">
     <article class="accessibility">
       <div>
-        <h1>Accessibility statement for lucasjordan.dev</h1>
+        <h1 class="text-primary">
+          Accessibility statement for lucasjordan.dev
+        </h1>
 
         <p>
           This accessibility statement applies to <strong
@@ -88,7 +90,9 @@ const footerNavLinks: NavLink[] = [
         </p>
       </div>
     </article>
-    <Contact />
+    <div class="contact-section">
+      <Contact />
+    </div>
   </main>
   <Footer navLinks={footerNavLinks} />
 </Layout>
@@ -122,5 +126,13 @@ const footerNavLinks: NavLink[] = [
     ul li {
       margin-bottom: 0.8rem;
     }
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 38rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    width: 100%;
   }
 </style>

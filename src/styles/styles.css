@@ -88,6 +88,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scrollbar-color: #424242 #2E2E2E;
 }
 
 body {

@@ -5,6 +5,7 @@ import Layout from "../layouts/Layout.astro";
 // Component Imports:
 import Contact from "@components/Contact.astro";
 import Footer from "@components/Footer.astro";
+import NowItem from "@components/NowItem.astro";
 
 // Component variables:
 const pageTitle: string = "Now";
@@ -28,7 +29,7 @@ const footerNavLinks: NavLink[] = [
 
 <Layout title={pageTitle} description={pageDescription} navLinks={pageNavLinks}>
   <main class="wrapper">
-    <article class="ambrose">
+    <article class="now">
       <div>
         <h1 class="text-primary">Now</h1>
 
@@ -46,71 +47,106 @@ const footerNavLinks: NavLink[] = [
           >.
         </p>
 
-        <h2 class="text-primary">June, 2024</h2>
+        <NowItem heading="February, 2025">
+          <p>
+            It's been a very hot summer and I've had my nose to the grindstone
+            after enjoying a wonderful and restful two week vacation over
+            Christmas. Over the break my Wife and I spent four nights in
+            Adelaide visiting the wine country 🍷.
+          </p>
 
-        <p>
-          It's been a very cold start to winter in Naarm my tea consumption has
-          increased exponentially! ☕
-        </p>
+          <p>
+            I was recently published by my company on linkedin as part of our
+            "Meet the team" series. You can read about it
+            <strong>
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7294522372601131009/"
+                tabindex="0"
+                target="_blank"
+                class="text-primary"
+              >
+                here
+              </a></strong
+            >.
+          </p>
 
-        <p>
-          I published my first blog post for my company. You can read it
-          <strong>
-            <a
-              href="https://blog.srcinnovations.com.au/2024/07/01/save-money-on-hosting-enhance-security-and-improve-seo-with-static-sites/"
-              tabindex="0"
-              target="_blank"
-              class="text-primary"
-            >
-              here
-            </a></strong
-          >.
-        </p>
+          <ul class="ls-none">
+            <li>
+              <strong>Watched:</strong>
+              A Complete Unknown (2024) (⭐⭐⭐).
+            </li>
+            <li>
+              <strong>Currently Playing:</strong>
+              Final Fantasy XIII (PS3).
+            </li>
+          </ul>
+        </NowItem>
 
-        <ul class="ls-none">
-          <li>
-            <strong>Watched:</strong>
-            Furiosa: A Mad Max Saga (⭐⭐⭐⭐⭐).
-          </li>
-          <li>
-            <strong>Currently Playing:</strong>
-            Fallout New Vegas (PS3) (Haven’t had much time for games😭).
-          </li>
-          <li>
-            <strong>Currently Reading:</strong>
-            <a
-              href="https://www.penguin.com.au/books/tomorrow-and-tomorrow-and-tomorrow-9781529115543"
-              tabindex="0"
-              target="_blank"
-              >Tomorrow, and Tomorrow, and Tomorrow by Gabrielle Zevin
-            </a>.
-          </li>
-        </ul>
+        <NowItem heading="June, 2024">
+          <p>
+            It's been a very cold start to winter in Naarm my tea consumption
+            has increased exponentially! ☕
+          </p>
 
-        <h2 class="text-primary">May, 2024</h2>
+          <p>
+            I published my first blog post for my company. You can read it
+            <strong>
+              <a
+                href="https://blog.srcinnovations.com.au/2024/07/01/save-money-on-hosting-enhance-security-and-improve-seo-with-static-sites/"
+                tabindex="0"
+                target="_blank"
+                class="text-primary"
+              >
+                here
+              </a></strong
+            >.
+          </p>
 
-        <p>
-          I've had a lot of opportunities to mentor at work! ❤ It's a very cold
-          Autumn in Naarm but at least the days are mostly sunny. I've spent
-          some time setting up my retro video game collection and playing old
-          games.
-        </p>
+          <ul class="ls-none">
+            <li>
+              <strong>Watched:</strong>
+              Furiosa: A Mad Max Saga (⭐⭐⭐⭐⭐).
+            </li>
+            <li>
+              <strong>Currently Playing:</strong>
+              Fallout New Vegas (PS3) (Haven’t had much time for games😭).
+            </li>
+            <li>
+              <strong>Currently Reading:</strong>
+              <a
+                href="https://www.penguin.com.au/books/tomorrow-and-tomorrow-and-tomorrow-9781529115543"
+                tabindex="0"
+                target="_blank"
+                >Tomorrow, and Tomorrow, and Tomorrow by Gabrielle Zevin
+              </a>.
+            </li>
+          </ul>
+        </NowItem>
 
-        <ul class="ls-none">
-          <li>
-            <strong>Currently Playing:</strong>
-            Fallout New Vegas (PS3), The Legend of Zelda: Twilight Princess (Game
-            Cube), Hard Edge (PS1)
-          </li>
-          <li>
-            <strong>Currently Watching:</strong>
-            Fallout, X-Men'97
-          </li>
-          <li>
-            <strong>Currently Reading:</strong>
-            Neighbourhood Guide to Cycling Naarm by Trent Holden and Kate Morgan.
-          </li>
-        </ul>
+        <NowItem heading="May, 2024">
+          <p>
+            I've had a lot of opportunities to mentor at work! ❤ It's a very
+            cold Autumn in Naarm but at least the days are mostly sunny. I've
+            spent some time setting up my retro video game collection and
+            playing old games.
+          </p>
+
+          <ul class="ls-none">
+            <li>
+              <strong>Currently Playing:</strong>
+              Fallout New Vegas (PS3), The Legend of Zelda: Twilight Princess (Game
+              Cube), Hard Edge (PS1)
+            </li>
+            <li>
+              <strong>Currently Watching:</strong>
+              Fallout, X-Men'97
+            </li>
+            <li>
+              <strong>Currently Reading:</strong>
+              Neighbourhood Guide to Cycling Naarm by Trent Holden and Kate Morgan.
+            </li>
+          </ul>
+        </NowItem>
       </div>
     </article>
     <div class="contact-section">

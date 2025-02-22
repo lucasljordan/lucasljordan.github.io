@@ -1,0 +1,30 @@
+---
+// Component Props:
+interface Props {
+  heading: string;
+}
+
+// Component variables:
+const { heading } = Astro.props;
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<div class="now-item">
+  <h2 class="text-primary">{heading}</h2>
+  <slot />
+</div>
+
+<style>
+  .now-item {
+    h2 {
+      margin-block-end: 0.8em;
+    }
+
+    p {
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+    }
+  }
+</style>
